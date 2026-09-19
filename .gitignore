@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Eval: raw unlabeled dump (labeled.json is committed instead)
+scripts/eval/candidates.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
