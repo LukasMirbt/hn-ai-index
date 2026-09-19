@@ -1,4 +1,4 @@
-const BASE = "https://hacker-news.firebaseio.com/v1";
+const BASE = "https://hacker-news.firebaseio.com/v0";
 
 interface HnItem {
   id: number;
@@ -21,12 +21,14 @@ const domain = (url?: string) => {
 };
 
 export const fetchTopIds = (n: number): Promise<number[]> =>
-  get(`${BASE}/topstories.json`).then((ids: number[]) => ids.slice(0, n));
+  get(`${BASE}/topstories.json`).then((ids: unknown) => (ids as number[]).slice(0, n));
 
 export const fetchItem = (id: number): Promise<HnItem | null> =>
-  get(`${BASE}/item/${id}.json`).then((item: HnItem) =>
-    item?.deleted || item?.dead ? null : item
-  ).catch(() => null);
+  get(`${BASE}/item/${id}.json`).then((item: unknown) => {
+    if (!item || typeof item !== "object" || "error" in item) return null;
+    const i = item as HnItem;
+    return i?.deleted || i?.dead ? null : i;
+  }).catch(() => null);
 
 export const fetchCommentText = async (id: number): Promise<string | null> => {
   const item = await fetchItem(id);

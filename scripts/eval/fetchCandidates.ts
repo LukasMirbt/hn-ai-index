@@ -1,6 +1,6 @@
 /**
  * Fetches the top 100 HN posts with all signals and writes candidates.json.
- * Copy candidates.json to labeled.json and set label: true/false on each entry.
+ * Copy candidates.json to labeled.json and set label.relevance and label.sentiment on each entry.
  *
  * Usage: node_modules/.bin/tsx scripts/eval/fetch-candidates.ts
  */
@@ -21,7 +21,7 @@ export interface Candidate {
   domain: string | null;
   text: string | null;
   topComments: string[];
-  label: boolean | null;
+  label: { relevance: number; sentiment: number } | null;
 }
 
 const fetchComments = async (kids: number[]): Promise<string[]> => {

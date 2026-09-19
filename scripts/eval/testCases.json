@@ -1,0 +1,92 @@
+[
+  {
+    "id": 49765348,
+    "title": "I Built Non-Autoregressive Decision Models with RL a Year Ago",
+    "url": "https://laya.convaiinnovations.com/",
+    "domain": "laya.convaiinnovations.com",
+    "text": null,
+    "topComments": [
+      "I think the main gripe that people had with Jev and Typesafe was the language used when they launched. To me personally it seemed like a parody&#x2F;con&#x2F;shady at first. Breakthrough , our research went in another direction , Two years in stealth , System One thinking model , Jev can&#x27;t hallucinate , RLCD , We are doing very cool stuff, but we will have to hire you to tell you , - these are some of the things that they said on their website on the launch blog. I had used versions of bert to achieve the same functionality years ago. But to me it seems like they were able to trick the VCs with can&#x27;t hallucinate etc. To the above author, kudos for sharing your work and making it open. Something like this shouldn&#x27;t be closed in the first place when it has been available for so many years",
+      "I played around with Jev last night and did it for classification tasks that I used Gemini 2.5 flash lite with. It’s a bit faster and bit cheaper, but this is compared to LLM. The consistency was nice to see, BUT, as someone who trained NLP models prior to LLMs, it’s just BERT with more data. I can see why people would want ready made one shot classifier, and I can see the value of sending multiple classifier in one call, but I wouldn’t call it breakthrough. And I believe many labs will replicate it in no time and might have it as part of their harness. I see it as a wake up call for the tech community to go back to basics for most tasks instead of relying solely on generic LLMs.",
+      "I can understand why the author feels bitter but it still feels juvenile to me. Certainly both Jev and Laya are based on the research of countless prior papers and academics. Diogo decided to build a product out of the concept. The author didn&#x27;t. Publishing research papers and model weights is probably part of the problem--it feels academic. If you look at the author&#x27;s profile they focus on applying AI to healthcare. Not selling general AI type safety to AI pilled companies and devs. There&#x27;s a big difference there. Whether that&#x27;s good or bad you can argue all day. But for the author to expect otherwise is pretty weird. I do applaud them for not stewing too much on it and trying to do something about it, though.",
+      "It is really interesting to see this claim, because i thought the current theory was that typesafe actually repackaged the work from GLiNER[1] - which does seem to be a closer match, and their original paper[2] predates yours by several years. Curious if you had heard of it before? It is also open source[3] and I think also has some good usage. [1] https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2507.18546 [2] https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2311.08526 [3] https:&#x2F;&#x2F;github.com&#x2F;fastino-ai&#x2F;GLiNER2",
+      "I think the biggest lesson with Jev was the one of communication and understanding for the broader audience, sometimes a lot about innovating involves repeating yourself and translating your own thoughts to an intended audience. Classical machine learning has been, for the most part, and just by the nature of science, behind academic terms and difficult to engage with as a product. Jev did really well with coining up “System One” models and defining a standard application interface plus core primitives that landed in the current paradigm of software development. I think it’s sort of like how Cursor reinvented autocomplete back then as a different UX and suddenly everyone was just using it because of how easy the bar was to understanding it. Lastly, timing is everything. Just as Cursor had a first mover advantage, despite ML Ops being a thing for a while, they managed to encapsulate the concept behind a “System One” black box that fits the existing mental model for building software and shipping a data contract in the right point in time where the cost of tokens has been an important metric to watch."
+    ],
+    "label": {
+      "relevance": 1,
+      "sentiment": 0
+    }
+  },
+  {
+    "id": 49764791,
+    "title": "AI-generated posters don’t have to be horrible",
+    "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+    "domain": "john.hartnup.uk",
+    "text": null,
+    "topComments": [
+      "A lot of people in the comments say that the supposedly better examples in the article are still “horrible” because they can tell they’re AI and point to things that the AI did “wrong” and a human artist would do better. That may be true if you’re working with a top of the line artist, but in my experience the average freelance designer online is significantly worse than AI. I’ve worked with dozens of budget friendly designers on Fiverr and consistently get way worse results than I’ve gotten from AI models. Will a great human designer produce better output than an AI? Maybe, but a small local event or business probably won’t have the budget to hire them or know where to find them. It’s cheaper, faster and easier to use AI to generate something that’s good enough for their purposes. People also point out all the little flaws in the “good” examples and cite them as obvious tells that they were AI generated. I think it would be interesting to see if people could reliably distinguish between AI generated flyers and human made flyers. Sure, sometimes it’s obvious like when the AI adds those weird, cartoony people. But if the model is told not to create designs like that and stick to the styles used in the second half of the article, I expect people would have a much harder time distinguishing the human designs from the AI designs.",
+      "I find it kinda funny that even smartest , most capable models often have a very hard time going beyond surface-level, top-of-mind associations, when faced with creative tasks. Of course , a Japanese Minimal Poster has a sakura and a stylized flag of Japan, duh A human designer would probably think that Japan - sakura and Japan - Japanese flag are way too obvious, too banal, too stereotypical, and, most importantly too boring . And then they would probably sit for a while and try to think of something fresher and less clichéd. But AI has absolutely no problem with going with the cheesiest, most overused trope.",
+      "It’s not complicated - the default style signals low effort. Why should I get excited about the village fete if the organizers put in the barest minimum of effort? But there’s another reason it drives people crazy - it’s low effort trying to present as high effort. If the sign was simple Comic Sans then it would at least be charmingly honest.",
+      "The comments seem to have the consensus that these designs are just ok But to me it still seems genuinely amazing that LLM&#x27;s are able to generate graphics of this high quality with the text and narrative correctly positioned. Blown away, but also quite sad, about the future of creative endeavours like graphic design",
+      "The only ones that aren&#x27;t horrible manage that because they&#x27;re so bland there&#x27;s nothing to go wrong. Look at an example with some detail, the Now please make one in the style of a 90s drum n bass gig flyer, with early 3D&#x2F;fractal computer imagery poster. At the top of the page we have a deformed wireframe sphere. A wireframe sphere is stylistically appropriate, but the incorrect rendering is not. The CGI aesthetic requires obviously computer generated lines, which in the 90s meant accurate and regular lines. Next we have a messed-up stellated polyhedron, and a messed-up dot pattern. These also fail for the same reason. The main 3D rendering is also obviously broken, as are many other small details. But the biggest failure is the complete misunderstanding of the culture. 90s DnB was absolutely not about good vibes . The smiley face logo is completely inappropriate; that&#x27;s associated with late 80s&#x2F;early 90s rave culture, pre-DnB era. 90s DnB was much darker and edgier in tone. The scene was almost exclusively male, and it maintained a aggressive vibe carried over from jungle. A 90s DnB event would never advertise bringing communities together . Audiences would be repelled by such messaging. This is despite it actually doing just that, as the scene was racially integrated in a way that mainstream music at the time was not. If there&#x27;s going to be pro-social messaging on the poster it has to be there only implicitly."
+    ],
+    "label": {
+      "relevance": 1,
+      "sentiment": 0
+    }
+  },
+  {
+    "id": 49763697,
+    "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "domain": "med.stanford.edu",
+    "text": null,
+    "topComments": [
+      "What a way to oversell the discovery. The reality is: * Different brain regions have different functions: ancient knowledge. * Different regions contain distinct cell types and molecular programs: also well established. * Anterior and posterior brain structures may trace back to fundamentally separate progenitor lineages that were independently specified very early in evolution and development: that&#x27;s the interesting new result. The headline should have been: Human forebrain and hindbrain arise from distinct embryonic progenitor lineages - not that we have two organs in the brain.",
+      "I wonder if there is a principle here we can apply to neural nets like dividing up the layers for different tasks (no not MoE but something more fundamental).",
+      "They identified two different brain progenitor cells. One, which expresses a gene called Otx2, is destined to become the forebrain and midbrain. The other, which expresses a gene called Gbx2, is committed to forming the hindbrain. They showed that these two cell populations never overlap; they are mutually exclusive from the earliest stages of development. Very cool. Never thought the brain could have two completely different ancestors",
+      "I&#x27;ve just being doing some googling to try to understand this research better. It seems that it&#x27;s been known for a while that more primitive animals have&#x2F;had functionally distinct front (sensory) and rear (motor + autonomic) neural systems, with different genes (Otx, Gbx) associated with each. In 2003 it was shown that an extant species, acorn worms, have this front&#x2F;sensory, rear&#x2F;motor neural division, assumed to date back to the pre-chordates. In vertebrates we also see this association of Otx gene expression in the mid&#x2F;forebrain and Gbx in the hindbrain, but it has been assumed that these two halves of the brain had fused long ago... What this new research shows is that this fusion only happens during development of the embryo, which seems to be a fairly common phenomena Ontogeny recapitulates phylogeny whereby embryonic development follows the same steps as evolution (e.g. human embryo also has a tail, chicken embryo has teeth). Of course the front&#x2F;sensory and rear&#x2F;motor neural systems aren&#x27;t totally isolated, since the sensory signals serve to steer the motor programs running in the back, and our brain still follows this primitive division of functionality.",
+      "The really exciting thing in this article is that this research led them to a new technique for growing brain stem cells in vitro, which has been very difficult until now. If that isn&#x27;t being oversold, it&#x27;s big news. That&#x27;s going to make future research into diseases like ALS a lot easier."
+    ],
+    "label": {
+      "relevance": 0,
+      "sentiment": 0
+    }
+  },
+  {
+    "id": 49766676,
+    "title": "A graphical desktop for the ZX Spectrum",
+    "url": "https://github.com/mindbox77/zxdesk",
+    "domain": "github.com",
+    "text": null,
+    "topComments": [
+      "This is the sort of thing I&#x27;ve wanted to write for a long time. Yes it looks like this is vibe coded but I&#x27;m glad this was made because it&#x27;s cool to see what can be done, and it&#x27;s interesting seeing how AI can be used as a compiler essentially given the output is assembly. I&#x27;d be interested if the author would tell us more about what they did here and what went into the design and evolution, rather than the AI README.",
+      "It _does_ look really cool, genuinely, but calling it a labour of love and then having AI write the readme&#x2F;docs seems conflicting.",
+      "Three rules that earned their place: One commit per verified piece of work, with the acceptance numbers in the commit message Project: One single commit: ZX Desk, first release ???",
+      "I had fun playing around in Claude getting it to write 6502 assembler for the BBC Micro. It is fun to imagine what we could have built on those old machines with these new coding agents! But it is kind of hollow isn&#x27;t it.",
+      "Related: The SymbOS operating system and graphical desktop for Amstrad CPC, MSX and some other Z80 machines was coded entirely manually - the first release was in 2006. https:&#x2F;&#x2F;www.symbos.org&#x2F; Of course for the Commodore 64 the GEOS desktop was already released as a commercial product in 1986. https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;GEOS_(8-bit_operating_system)"
+    ],
+    "label": {
+      "relevance": 0,
+      "sentiment": 0
+    }
+  },
+  {
+    "id": 49720143,
+    "title": "“The Secret Life of Circuits” is here",
+    "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+    "domain": "blog.coredump.cx",
+    "text": null,
+    "topComments": [
+      "A couple clicks through to older lcamtuf posts and I came across this in the what is electricity post: Once again, we don’t have a satisfying explanation why. We know that these quantum numbers correspond to standing-wave solutions of a three-dimensional wave function that we pulled out of thin air. We also know that the model works better than any alternatives. But we don’t know what any of it really means — or if it means anything. It is so refreshing to see this explicated thus; physics textbooks are generally coy about know this for now, and there will be deeper insights available later but they typically never level with readers and say we don&#x27;t know .",
+      "I see some discussion of which books are good for people with various levels of electronics knowledge. I&#x27;d like to add one that I&#x27;ve never seen mentioned here: Agarwal and Lang&#x27;s Foundations of Analog and Digital Electronics . This was the book used by MIT in 2007 for the first course in the EE and CS programs. It is that year&#x27;s course that is on their Open Courseware platform [1], and the readings list there links to a full PDF of the book. (Edit: click the book title on the readings page, not the View e-book version link. See my response to groos&#x27; comment below for details). This is not a link to a pirated copy BTW. Agarwal is a pioneer in the open-education movement and the authors intentionally arranged for an open access PDF. The lecture videos on Open Courseware are very good too. [1] https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;6-002-circuits-and-electronics-s...",
+      "I am from software engineer background and how I learn Circuit is just watching the best 3 video from Captive Aire channel: 1. https:&#x2F;&#x2F;youtu.be&#x2F;pDELW2pIvWw?si=BNsURdXrGLlaAfF3 (Digital Electronic) 2. https:&#x2F;&#x2F;youtu.be&#x2F;RG3eljmqyq4?si=Pnbvf6P6HbFcIa1v (Alternating Current, Motors, control) 3. https:&#x2F;&#x2F;youtu.be&#x2F;nYuVSG89vg0?si=Oe3ZdJojS7T_iGxK (Electric Basic Made is Easy), and the episode of Nand to Tetris",
+      "This book looks like it’s targeted squarely at people like me! I’ve been a software engineer for the last couple of decades and I’ve tinkered with microcontrollers as a hobby but always been limited by my lack of electronics knowledge - very much trial and error to get a project far enough to be able to focus on the firmware (which is more my domain). I want to bridge the knowledge gap there. My only formal electronics education was first year introduction to analog and digital circuits module at university two decades ago, led by a lecturer who assumed students had a huge corpus of pre-existing knowledge (and who I now suspect would have preferred to be supervising his PhD students and conducting research but had to make up the teaching hours - which I do understand). I will definitely pick up a copy. However, Amazon UK (to avoid the NoStarch UPS shipping cost of $24) won’t get it to me until November. I’m excited to receive it.",
+      "If you&#x27;re ordering from Europe, be sure to check if it&#x27;s available in your local Amazon page first, I almost got slapped with like a 50% shipping&#x2F;import charges because I went straight to the main link (the US amazon). The ones that have it are listed in the blog post."
+    ],
+    "label": {
+      "relevance": 0,
+      "sentiment": 0
+    }
+  }
+]
