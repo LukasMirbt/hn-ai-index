@@ -1,3 +1,6 @@
+import { Readability } from "@mozilla/readability";
+import { JSDOM } from "jsdom";
+
 const BASE = "https://hacker-news.firebaseio.com/v0";
 
 interface HnItem {
@@ -37,6 +40,22 @@ export const fetchCommentText = async (id: number): Promise<string | null> => {
 
 export const fetchBottomCommentIds = (kids: number[], n: number, fetchWindow = 20): number[] =>
   kids.slice(-Math.max(n, fetchWindow)).reverse();
+
+export const fetchArticleText = async (url: string): Promise<string | null> => {
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; hn-ai-index/1.0)" },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    const dom = new JSDOM(html, { url });
+    const article = new Readability(dom.window.document).parse();
+    return article?.textContent?.replace(/\s+/g, " ").trim().slice(0, 1500) ?? null;
+  } catch {
+    return null;
+  }
+};
 
 export const fetchPost = async (id: number) => {
   const item = await fetchItem(id);

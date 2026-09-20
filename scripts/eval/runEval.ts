@@ -9,16 +9,16 @@
 import { readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import type { Classifier } from "./classifier.js";
 import { KeywordClassifier } from "./keywordClassifier.js";
+import { LlmClassifier } from "./LlmClassifier.js";
 import type { Candidate } from "./fetchCandidates.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ── Register classifiers here ──────────────────────────────────────────────
-const classifiers: Classifier[] = [
+const classifiers = [
   KeywordClassifier,
-  // LlmClassifier,  ← add future classifiers here
+  LlmClassifier,
 ];
 
 // ── Resolve data file ──────────────────────────────────────────────────────
@@ -44,24 +44,21 @@ const rmse  = (errors: number[]) => Math.sqrt(errors.reduce((s, e) => s + e ** 2
 
 // ── Run each classifier ────────────────────────────────────────────────────
 for (const classifier of classifiers) {
-  const results = labeled.map((c) => {
-    const pred = classifier.classify(c);
-    const label = c.label as { relevance: number; sentiment: number };
+  const results = await Promise.all(labeled.map(async (c) => {
+    const pred = await classifier.classify(c);
+    const label = c.label as { relevance: number };
     return {
       candidate: c,
       label,
       pred,
       relevanceError: pred.relevance - label.relevance,
-      sentimentError: pred.sentiment - label.sentiment,
     };
-  });
+  }));
 
-  const relErrors  = results.map((r) => r.relevanceError);
-  const sentErrors = results.map((r) => r.sentimentError);
+  const relErrors = results.map((r) => r.relevanceError);
 
   console.log(`Classifier : ${classifier.name}`);
-  console.log(`  Relevance  — MAE: ${fmt(mae(relErrors))}  RMSE: ${fmt(rmse(relErrors))}`);
-  console.log(`  Sentiment  — MAE: ${fmt(mae(sentErrors))}  RMSE: ${fmt(rmse(sentErrors))}\n`);
+  console.log(`  Relevance  — MAE: ${fmt(mae(relErrors))}  RMSE: ${fmt(rmse(relErrors))}\n`);
 
   const worst = [...results]
     .sort((a, b) => Math.abs(b.relevanceError) - Math.abs(a.relevanceError))

@@ -38,6 +38,6 @@ export const KeywordClassifier: Classifier = {
   name: "KeywordClassifier",
   classify(post: Post): Classification {
     const { relevance, reason } = relevanceScore(post);
-    return { relevance, sentiment: 0.0, reason };
+    return { relevance, reason };
   },
 };
