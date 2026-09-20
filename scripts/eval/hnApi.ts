@@ -35,6 +35,9 @@ export const fetchCommentText = async (id: number): Promise<string | null> => {
   return item?.text ? stripHtml(item.text) : null;
 };
 
+export const fetchBottomCommentIds = (kids: number[], n: number, fetchWindow = 20): number[] =>
+  kids.slice(-Math.max(n, fetchWindow)).reverse();
+
 export const fetchPost = async (id: number) => {
   const item = await fetchItem(id);
   if (!item?.title) return null;

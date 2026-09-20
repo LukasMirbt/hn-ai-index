@@ -15,7 +15,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { fetchPost, fetchCommentText } from "./hnApi.js";
+import { fetchPost, fetchCommentText, fetchBottomCommentIds } from "./hnApi.js";
 import type { Candidate } from "./fetchCandidates.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -48,10 +48,12 @@ if (!post) {
   process.exit(1);
 }
 
-const commentTexts = await Promise.all(
-  post.kids.slice(0, 5).map(fetchCommentText)
-);
-const topComments = commentTexts.filter((c): c is string => c !== null);
+const topCommentTexts = await Promise.all(post.kids.slice(0, 5).map(fetchCommentText));
+const topComments = topCommentTexts.filter((c): c is string => c !== null);
+
+const bottomIds = fetchBottomCommentIds(post.kids, 5);
+const bottomCommentTexts = await Promise.all(bottomIds.map(fetchCommentText));
+const bottomComments = bottomCommentTexts.filter((c): c is string => c !== null).slice(0, 5);
 
 const entry: Candidate = {
   id: post.id,
@@ -60,6 +62,7 @@ const entry: Candidate = {
   domain: post.domain,
   text: post.text,
   topComments,
+  bottomComments,
   label: { relevance, sentiment },
 };
 

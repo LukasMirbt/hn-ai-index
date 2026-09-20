@@ -12,9 +12,16 @@
       "It is really interesting to see this claim, because i thought the current theory was that typesafe actually repackaged the work from GLiNER[1] - which does seem to be a closer match, and their original paper[2] predates yours by several years. Curious if you had heard of it before? It is also open source[3] and I think also has some good usage. [1] https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2507.18546 [2] https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2311.08526 [3] https:&#x2F;&#x2F;github.com&#x2F;fastino-ai&#x2F;GLiNER2",
       "I think the biggest lesson with Jev was the one of communication and understanding for the broader audience, sometimes a lot about innovating involves repeating yourself and translating your own thoughts to an intended audience. Classical machine learning has been, for the most part, and just by the nature of science, behind academic terms and difficult to engage with as a product. Jev did really well with coining up “System One” models and defining a standard application interface plus core primitives that landed in the current paradigm of software development. I think it’s sort of like how Cursor reinvented autocomplete back then as a different UX and suddenly everyone was just using it because of how easy the bar was to understanding it. Lastly, timing is everything. Just as Cursor had a first mover advantage, despite ML Ops being a thing for a while, they managed to encapsulate the concept behind a “System One” black box that fits the existing mental model for building software and shipping a data contract in the right point in time where the cost of tokens has been an important metric to watch."
     ],
+    "bottomComments": [
+      "I&#x27;ve been deeply impressed with Jev as it made a bunch of workloads we had on Luna or Gemini 10x cheaper and 2x faster (previously used non reasoning version for latency reasons). Now Laya promises another speed up and it&#x27;s open source. Tbh if it can&#x27;t run on a CPU I anyway want to buy it from an inference provider. Managing gpus in production is a non trivial problem. What I also wondered about Jev is how different it is from something like tabular foundation models. They seem to overlap in use cases. Which then leads to the question, what is actually learned? A lot of people in machine learning spend time to making things explainable and always struggled to move beyond data induced biases. Having it open source is awesome as fine tuning might give additional performance on the task we care about.",
+      "but now you got the attention. It is alright. Few remember Atanasof too.",
+      "I&#x27;m just glad to see focus being shifted (albeit slowly) to conventional ML. Enough with LLM guys",
+      "Seeing the hype online feels both validating and deeply frustrating. The post is conflating hype and money with technical innovation, they are not really correlated. Kurzweil is known for saying most innovations succeed based not on technology but on timing. Today, who talks about it might matter even more than timing. Superior research often gets overlooked in favor of someone raising millions, sometimes people who have produced literally nothing manage to sell it. Not saying that&#x27;s happening here, but I&#x27;ve seen this pattern a lot over my career. Someone riding (or manufacturing) a hype wave is playing a completely different game from a researcher. If you&#x27;re a researcher you can&#x27;t really feel dejected when someone is making a business on the back of what seems like your research; legal protections are decades out of date, even ignoring vibe coding. If you want to make money&#x2F;hype&#x2F;whatever off of your work, do that. But realize that it&#x27;s a path that&#x27;s often orthogonal to research.",
+      "I just built a server based on Jev API to run Laya here https:&#x2F;&#x2F;github.com&#x2F;jlt-commons&#x2F;laya-jolt"
+    ],
     "label": {
       "relevance": 1,
-      "sentiment": 0
+      "sentiment": 0.6
     }
   },
   {
@@ -30,9 +37,16 @@
       "The comments seem to have the consensus that these designs are just ok But to me it still seems genuinely amazing that LLM&#x27;s are able to generate graphics of this high quality with the text and narrative correctly positioned. Blown away, but also quite sad, about the future of creative endeavours like graphic design",
       "The only ones that aren&#x27;t horrible manage that because they&#x27;re so bland there&#x27;s nothing to go wrong. Look at an example with some detail, the Now please make one in the style of a 90s drum n bass gig flyer, with early 3D&#x2F;fractal computer imagery poster. At the top of the page we have a deformed wireframe sphere. A wireframe sphere is stylistically appropriate, but the incorrect rendering is not. The CGI aesthetic requires obviously computer generated lines, which in the 90s meant accurate and regular lines. Next we have a messed-up stellated polyhedron, and a messed-up dot pattern. These also fail for the same reason. The main 3D rendering is also obviously broken, as are many other small details. But the biggest failure is the complete misunderstanding of the culture. 90s DnB was absolutely not about good vibes . The smiley face logo is completely inappropriate; that&#x27;s associated with late 80s&#x2F;early 90s rave culture, pre-DnB era. 90s DnB was much darker and edgier in tone. The scene was almost exclusively male, and it maintained a aggressive vibe carried over from jungle. A 90s DnB event would never advertise bringing communities together . Audiences would be repelled by such messaging. This is despite it actually doing just that, as the scene was racially integrated in a way that mainstream music at the time was not. If there&#x27;s going to be pro-social messaging on the poster it has to be there only implicitly."
     ],
+    "bottomComments": [
+      "HN may as well be &#x2F;r&#x2F;accelerate The AI obsession is ruining every conversation.",
+      "They just need to not exist",
+      "AI posters are not horrible, they just expose the person who commissioned them as trash. In a way, that is a good thing, since you can avoid them more easily.",
+      "Simply, don&#x27;t use AI to generate posters and pay someone to do it.",
+      "Julio"
+    ],
     "label": {
       "relevance": 1,
-      "sentiment": 0
+      "sentiment": 0.1
     }
   },
   {
@@ -47,6 +61,13 @@
       "They identified two different brain progenitor cells. One, which expresses a gene called Otx2, is destined to become the forebrain and midbrain. The other, which expresses a gene called Gbx2, is committed to forming the hindbrain. They showed that these two cell populations never overlap; they are mutually exclusive from the earliest stages of development. Very cool. Never thought the brain could have two completely different ancestors",
       "I&#x27;ve just being doing some googling to try to understand this research better. It seems that it&#x27;s been known for a while that more primitive animals have&#x2F;had functionally distinct front (sensory) and rear (motor + autonomic) neural systems, with different genes (Otx, Gbx) associated with each. In 2003 it was shown that an extant species, acorn worms, have this front&#x2F;sensory, rear&#x2F;motor neural division, assumed to date back to the pre-chordates. In vertebrates we also see this association of Otx gene expression in the mid&#x2F;forebrain and Gbx in the hindbrain, but it has been assumed that these two halves of the brain had fused long ago... What this new research shows is that this fusion only happens during development of the embryo, which seems to be a fairly common phenomena Ontogeny recapitulates phylogeny whereby embryonic development follows the same steps as evolution (e.g. human embryo also has a tail, chicken embryo has teeth). Of course the front&#x2F;sensory and rear&#x2F;motor neural systems aren&#x27;t totally isolated, since the sensory signals serve to steer the motor programs running in the back, and our brain still follows this primitive division of functionality.",
       "The really exciting thing in this article is that this research led them to a new technique for growing brain stem cells in vitro, which has been very difficult until now. If that isn&#x27;t being oversold, it&#x27;s big news. That&#x27;s going to make future research into diseases like ALS a lot easier."
+    ],
+    "bottomComments": [
+      "I worked with a doctor once to build a 3D Model of the brain apertures. Disclaimer: the work presents these as spiritual&#x2F;meditational reference points, not established neuroanatomical structures. Textual reconstruction of the “Brain Apertures” diagram used in the Radhasoami&#x2F;Surat Shabd Yoga tradition. The named “apertures” are spiritual&#x2F;meditational reference points in this tradition; labels such as temporal lobe, occipital lobe, cerebellum and brain stem are anatomical landmarks shown in the source diagram in the doc below. Some details here: https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1N9KxIWNF_z9twZurRgkTLljf...",
+      "And that&#x27;s why we oftentimes talk about brains in the plural",
+      "This isn&#x27;t peer reviewed, just a press release. 10 other papers will be published in the next 2 weeks counterfinding anything in this post. Science moves forward yet again with a few backward steps.",
+      "Wintermute and neuromancer!",
+      "What a way to oversell the discovery. The reality is: * Different brain regions have different functions: ancient knowledge. * Different regions contain distinct cell types and molecular programs: also well established. * Anterior and posterior brain structures may trace back to fundamentally separate progenitor lineages that were independently specified very early in evolution and development: that&#x27;s the interesting new result. The headline should have been: Human forebrain and hindbrain arise from distinct embryonic progenitor lineages - not that we have two organs in the brain."
     ],
     "label": {
       "relevance": 0,
@@ -66,8 +87,15 @@
       "I had fun playing around in Claude getting it to write 6502 assembler for the BBC Micro. It is fun to imagine what we could have built on those old machines with these new coding agents! But it is kind of hollow isn&#x27;t it.",
       "Related: The SymbOS operating system and graphical desktop for Amstrad CPC, MSX and some other Z80 machines was coded entirely manually - the first release was in 2006. https:&#x2F;&#x2F;www.symbos.org&#x2F; Of course for the Commodore 64 the GEOS desktop was already released as a commercial product in 1986. https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;GEOS_(8-bit_operating_system)"
     ],
+    "bottomComments": [
+      "Assembly seems overkill though.",
+      "Written in the best programming language ever!",
+      "It’s Claude’s earnestness that’s so disingenuous in this kind of write up. This voice Claude has where it believes the work is important and deserves to be taken seriously , and where it takes ever part of the process where it has to adjust its approach because of a thing it figured out as a great insight which is incredibly valuable and that people should be made aware of… I feel like vibecoded projects need Claude to pick up on a sense of ‘this is just me messing around’, and a project like this where there does appear to be genuine digging into the art of performance tuning Z80 assembly needs Claude to understand ‘this is impractical hacking for hacking’s sake not groundbreaking research’ I don’t have a problem with projects which are, essentially ‘Claude and I burned a lot of tokens for giggles to see just how far you can push something’. But the write up needs to reflect that spirit .",
+      "Can anyone suggest a simple high-level graphical desktop (perhaps written in a mix of assembly and C) that comes with good documentation, or even an associated textbook?",
+      "Sure are cute little pieces of history: https:&#x2F;&#x2F;duckduckgo.com&#x2F;?q=zx+spectrum ia=images iax=images"
+    ],
     "label": {
-      "relevance": 0,
+      "relevance": 0.1,
       "sentiment": 0
     }
   },
@@ -83,6 +111,13 @@
       "I am from software engineer background and how I learn Circuit is just watching the best 3 video from Captive Aire channel: 1. https:&#x2F;&#x2F;youtu.be&#x2F;pDELW2pIvWw?si=BNsURdXrGLlaAfF3 (Digital Electronic) 2. https:&#x2F;&#x2F;youtu.be&#x2F;RG3eljmqyq4?si=Pnbvf6P6HbFcIa1v (Alternating Current, Motors, control) 3. https:&#x2F;&#x2F;youtu.be&#x2F;nYuVSG89vg0?si=Oe3ZdJojS7T_iGxK (Electric Basic Made is Easy), and the episode of Nand to Tetris",
       "This book looks like it’s targeted squarely at people like me! I’ve been a software engineer for the last couple of decades and I’ve tinkered with microcontrollers as a hobby but always been limited by my lack of electronics knowledge - very much trial and error to get a project far enough to be able to focus on the firmware (which is more my domain). I want to bridge the knowledge gap there. My only formal electronics education was first year introduction to analog and digital circuits module at university two decades ago, led by a lecturer who assumed students had a huge corpus of pre-existing knowledge (and who I now suspect would have preferred to be supervising his PhD students and conducting research but had to make up the teaching hours - which I do understand). I will definitely pick up a copy. However, Amazon UK (to avoid the NoStarch UPS shipping cost of $24) won’t get it to me until November. I’m excited to receive it.",
       "If you&#x27;re ordering from Europe, be sure to check if it&#x27;s available in your local Amazon page first, I almost got slapped with like a 50% shipping&#x2F;import charges because I went straight to the main link (the US amazon). The ones that have it are listed in the blog post."
+    ],
+    "bottomComments": [
+      "The cover art is a gross error of judgement, and it stops me from buying this book for the next generation of hackers in the wider family. Adults will understand that the shush gesture with the soldering iron is supposed to be a play on the secret in the title, but a large part of the target audience is 12-15 years old. There will inevitably be some who&#x27;ll imitate the picture, with painful results.",
+      "I looked at sample chapter, the fonts and layout are visually repulsive.",
+      "This looks like it’ll be a good book for me to learn more about electrical theory and circuit design, I know a bit about AC and DC electricity from working in electrical construction which should help me dive right in, thanks for sharing this book release!",
+      "Love the certified clank-free logo",
+      "Already purchased, looking forward to getting it!!!"
     ],
     "label": {
       "relevance": 0,
