@@ -1,1 +1,2592 @@
-[]
+[
+  {
+    "date": "2026-09-06",
+    "posts": [
+      {
+        "id": 49588988,
+        "title": "Nitter and XCancel resume service after legal advice",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49586698,
+        "title": "Asahi Linux on M3",
+        "domain": "asahilinux.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49585644,
+        "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
+        "domain": "bcantrill.dtrace.org",
+        "relevance": 0.7
+      },
+      {
+        "id": 49580939,
+        "title": "The revolt of the reader",
+        "domain": "bcantrill.dtrace.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49582000,
+        "title": "Cloud in a Bottle: making self-hosting accessible to everyone",
+        "domain": "cloudinabottle.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49584083,
+        "title": "Isar Aerospace reaches orbit and deploys payloads on second flight",
+        "domain": "isaraerospace.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49590512,
+        "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+        "domain": "grapheneos.social",
+        "relevance": 0.1
+      },
+      {
+        "id": 49590611,
+        "title": "It took a year to ship WebAssembly in Anubis",
+        "domain": "anubis.techaro.lol",
+        "relevance": 0.1
+      },
+      {
+        "id": 49588080,
+        "title": "An Alien Mind",
+        "domain": "openai.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49581870,
+        "title": "Chrome again exempts Google from user site data settings",
+        "domain": "lapcatsoftware.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49541888,
+        "title": "Music Theory for Programmers",
+        "domain": "runjs.app",
+        "relevance": 0.2
+      },
+      {
+        "id": 49586171,
+        "title": "QBittorrent breaks out of sandbox to commit crimes",
+        "domain": "beige.party",
+        "relevance": 0.1
+      },
+      {
+        "id": 49586898,
+        "title": "A/I shuts down",
+        "domain": "keepitfree.ai",
+        "relevance": 0.2
+      },
+      {
+        "id": 49587217,
+        "title": "Research acceleration: The view inside OpenAI",
+        "domain": "openai.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49587636,
+        "title": "NetBSD 9.5 released and EOL for NetBSD-9",
+        "domain": "blog.netbsd.org",
+        "relevance": 0
+      },
+      {
+        "id": 49585627,
+        "title": "Doomscrolling ourselves to death",
+        "domain": "edwest.co.uk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49531619,
+        "title": "M-DISC – DVD/Blu-ray compatible discs that may last up to 1000 years",
+        "domain": "en.wikipedia.org",
+        "relevance": 0
+      },
+      {
+        "id": 49590595,
+        "title": "Harnessing the Universal Geometry of Embeddings",
+        "domain": "arxiv.org",
+        "relevance": 0.8
+      },
+      {
+        "id": 49548852,
+        "title": "How Swiss tables work in Go built-in map",
+        "domain": "victoriametrics.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49546198,
+        "title": "IBM Quantum Nighthawk R2",
+        "domain": "ibm.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49582656,
+        "title": "AI, Tools and Transformation",
+        "domain": "ben-evans.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49527599,
+        "title": "Topologist's Map of the World",
+        "domain": "futilitycloset.com",
+        "relevance": 0
+      },
+      {
+        "id": 49529398,
+        "title": "The ColorChecker, photography's most important 24 squares, turns 50",
+        "domain": "dpreview.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49590738,
+        "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
+        "domain": "github.com",
+        "relevance": 0.5
+      },
+      {
+        "id": 49540637,
+        "title": "Black Hole of Los Alamos: Seller of surplus nuclear research materials (2011)",
+        "domain": "atlasobscura.com",
+        "relevance": 0
+      },
+      {
+        "id": 49587903,
+        "title": "Research carried out using NetBSD",
+        "domain": "netbsd.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49582719,
+        "title": "AMD Based FreeBSD Desktop Reloaded",
+        "domain": "vermaden.wordpress.com",
+        "relevance": 0
+      },
+      {
+        "id": 49582582,
+        "title": "GPT-6 Astra on robot arms",
+        "domain": "openai.robocurve.org",
+        "relevance": 0.8
+      },
+      {
+        "id": 49539759,
+        "title": "OpenBSD Stories: Strange Medieval Devices",
+        "domain": "miod.online.fr",
+        "relevance": 0
+      },
+      {
+        "id": 49540090,
+        "title": "Electronic skin for prosthetics to sense temperature and pressure",
+        "domain": "news.wsu.edu",
+        "relevance": 0.3
+      }
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "posts": [
+      {
+        "id": 49593563,
+        "title": "Keep Our Servers Running",
+        "domain": "blog.archive.org",
+        "relevance": 0
+      },
+      {
+        "id": 49592375,
+        "title": "216M Spy TVs – The LG Smart TV Problem [video]",
+        "domain": "youtube.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49601655,
+        "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+        "domain": "lax-skyline.parcelscope.net",
+        "relevance": 0
+      },
+      {
+        "id": 49594878,
+        "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
+        "domain": "notebookcheck.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49596055,
+        "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+        "domain": "mathathonchallenge.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49591876,
+        "title": "Making a Python interpreter in 1024 bytes",
+        "domain": "austinhenley.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49552299,
+        "title": "WeatherNext 3",
+        "domain": "deepmind.google",
+        "relevance": 0.8
+      },
+      {
+        "id": 49569838,
+        "title": "Scientists observe Einstein's gravity in the quantum world",
+        "domain": "ox.ac.uk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49602699,
+        "title": "Leaving VMware just got harder after Broadcom pulled VDDK downloads",
+        "domain": "virtualizationhowto.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49586207,
+        "title": "Icy Moons Are Ocean Worlds",
+        "domain": "mceglowski.substack.com",
+        "relevance": 0
+      },
+      {
+        "id": 49575515,
+        "title": "Trusting-Trust Attack against an Entire Linux Distribution",
+        "domain": "arxiv.org",
+        "relevance": 0.2
+      },
+      {
+        "id": 49577129,
+        "title": "Ask HN: Fable hacked my piano, can I release the results?",
+        "domain": null,
+        "relevance": 0.5
+      },
+      {
+        "id": 49554622,
+        "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
+        "domain": "babylonian-collection.yale.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49598291,
+        "title": "bzip3",
+        "domain": "github.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49595865,
+        "title": "Live map of public transport in Belgium",
+        "domain": "openbaarvervoerbelgie.be",
+        "relevance": 0
+      },
+      {
+        "id": 49589914,
+        "title": "Ask HN: How do you manage skills files?",
+        "domain": null,
+        "relevance": 0.3
+      },
+      {
+        "id": 49558685,
+        "title": "Simple Is Not Small",
+        "domain": "jyn.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49571096,
+        "title": "This Month in Ladybird – August 2026",
+        "domain": "ladybird.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49591793,
+        "title": "Is mathematics about to enter the conservatory?",
+        "domain": "mbmccoy.dev",
+        "relevance": 0.3
+      },
+      {
+        "id": 49597189,
+        "title": "Smartphone makers don't bother to comply with EU repairability requirements",
+        "domain": "theregister.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49594251,
+        "title": "Switzerland's Federal Government Is Replacing Microsoft on 3k Computers",
+        "domain": "itsfoss.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49596054,
+        "title": "Speculative Decoding in vLLM on AMD GPUs",
+        "domain": "vllm.ai",
+        "relevance": 0.9
+      },
+      {
+        "id": 49597907,
+        "title": "De-Brainrot Vacations",
+        "domain": "devz.cl",
+        "relevance": 0.2
+      },
+      {
+        "id": 49561002,
+        "title": "Decoding the NEC V20 Microcode",
+        "domain": "martypc.blogspot.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49596119,
+        "title": "'You Can See Everything' Review: Nathan Fielder's Doc About Elizabeth Holmes",
+        "domain": "variety.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49592840,
+        "title": "Show HN: GET Together – A social network where you don't need POST to Post",
+        "domain": "gettogether.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49562440,
+        "title": "Whistle Synth Mac App",
+        "domain": "jefftk.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49561514,
+        "title": "Reverse engineering the storage format for an undocumented database",
+        "domain": "blog.glazer.ee",
+        "relevance": 0.1
+      },
+      {
+        "id": 49589190,
+        "title": "The Dataflow Model Revisited",
+        "domain": "vldb.org",
+        "relevance": 0.2
+      },
+      {
+        "id": 49568162,
+        "title": "Show HN: Jigsaw Haiku",
+        "domain": "jigsawhaiku.com",
+        "relevance": 0.1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-08",
+    "posts": [
+      {
+        "id": 49615537,
+        "title": "Muse – Meta’s personal AI agent",
+        "domain": "ai.meta.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49605915,
+        "title": "Navier-Stokes – Tristan Buckmaster [pdf]",
+        "domain": "cims.nyu.edu",
+        "relevance": 0
+      },
+      {
+        "id": 49613262,
+        "title": "On the Navier–Stokes Millennium Prize Problem",
+        "domain": "openai.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49611251,
+        "title": "AlphaGenome Atlas: a high-resolution map of human DNA",
+        "domain": "blog.google",
+        "relevance": 0.7
+      },
+      {
+        "id": 49610181,
+        "title": "DaVinci Resolve 21.1",
+        "domain": "blackmagicdesign.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49610631,
+        "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+        "domain": "github.com",
+        "relevance": 0.6
+      },
+      {
+        "id": 49579443,
+        "title": "We built our house for LAN parties (2024)",
+        "domain": "lanparty.house",
+        "relevance": 0
+      },
+      {
+        "id": 49605767,
+        "title": "Mistral raises €3B",
+        "domain": "mistral.ai",
+        "relevance": 0.5
+      },
+      {
+        "id": 49611128,
+        "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+        "domain": "quesma.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49604870,
+        "title": "There's a new \"Google Jail\" for independent wikis",
+        "domain": "weirdgloop.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49616968,
+        "title": "Tao: Open math problems being non-renewably mined by AI",
+        "domain": "mathstodon.xyz",
+        "relevance": 0.4
+      },
+      {
+        "id": 49604637,
+        "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
+        "domain": "mcpherrin.ca",
+        "relevance": 0.3
+      },
+      {
+        "id": 49604861,
+        "title": "Jellyfin 12.0",
+        "domain": "jellyfin.org",
+        "relevance": 0
+      },
+      {
+        "id": 49616354,
+        "title": "Mercury 2.5",
+        "domain": "inceptionlabs.ai",
+        "relevance": 0.8
+      },
+      {
+        "id": 49617581,
+        "title": "Large language models develop novel social biases through adaptive exploration",
+        "domain": "openreview.net",
+        "relevance": 0.8
+      },
+      {
+        "id": 49604150,
+        "title": "TALA Is Open-Source",
+        "domain": "d2lang.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49610538,
+        "title": "LibreOffice breaks download records after declaring it has no AI features",
+        "domain": "manualdousuario.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49600901,
+        "title": "The Helicopter with Radioactive Blades",
+        "domain": "hackaday.com",
+        "relevance": 0
+      },
+      {
+        "id": 49575914,
+        "title": "Replacing a Rust Enum with a 64-Bit Word Made My Interpreter 17% Faster",
+        "domain": "pointersgonewild.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49610059,
+        "title": "Show HN: Copperhead – Cursor for circuit boards",
+        "domain": "copperhead.sh",
+        "relevance": 0.1
+      },
+      {
+        "id": 49607443,
+        "title": "Among European Companies That Use a CDN, Nearly 9 in 10 Use Cloudflare",
+        "domain": "ciphercue.com",
+        "relevance": 0
+      },
+      {
+        "id": 49560682,
+        "title": "John Margolies' photographs of roadside America",
+        "domain": "publicdomainreview.org",
+        "relevance": 0
+      },
+      {
+        "id": 49614720,
+        "title": "ChatGPT Images 2.5",
+        "domain": "openai.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49608023,
+        "title": "Getting your hands dirty is good for you",
+        "domain": "bbc.com",
+        "relevance": 0
+      },
+      {
+        "id": 49612329,
+        "title": "LG TVs caught spying even when offline or on standby",
+        "domain": "theverge.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49611051,
+        "title": "The two Christian saints who are the Buddha",
+        "domain": "signoregalilei.com",
+        "relevance": 0
+      },
+      {
+        "id": 49610900,
+        "title": "Paramount Caught Using 'Astroturf' Group to Drum Up Fake Support for Merger",
+        "domain": "techdirt.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49616257,
+        "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49602490,
+        "title": "Emacs Bedrock 2.0",
+        "domain": "lambdaland.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49605246,
+        "title": "How well do agents use test/verification techniques?",
+        "domain": "danluu.com",
+        "relevance": 0.7
+      }
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "posts": [
+      {
+        "id": 49630931,
+        "title": "iPhone Duo",
+        "domain": "apple.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49626190,
+        "title": "Shopify acquires Tailwind",
+        "domain": "tailwindcss.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49614280,
+        "title": "What do Visa and Mastercard do? An intro to card networks",
+        "domain": "tautology.town",
+        "relevance": 0.1
+      },
+      {
+        "id": 49624823,
+        "title": "Desert Ant Labs: local, fast models that run on device",
+        "domain": "desertant.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49627370,
+        "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+        "domain": "magazine.sebastianraschka.com",
+        "relevance": 0.9
+      },
+      {
+        "id": 49623754,
+        "title": "Claude, change the “Add to Cart” button to blue",
+        "domain": "opusfived.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49629886,
+        "title": "Growing proof that autonomous cars save lives",
+        "domain": "spectrum.ieee.org",
+        "relevance": 0.3
+      },
+      {
+        "id": 49628493,
+        "title": "No Man's Sky Cosmos",
+        "domain": "nomanssky.com",
+        "relevance": 0
+      },
+      {
+        "id": 49624856,
+        "title": "How I advertise malicious software on Google Ads",
+        "domain": "xlii.space",
+        "relevance": 0.1
+      },
+      {
+        "id": 49630253,
+        "title": "AirPods 5",
+        "domain": "apple.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49630151,
+        "title": "iPhone 18 Pro and iPhone 18 Pro Max",
+        "domain": "apple.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49617255,
+        "title": "How to build a printer",
+        "domain": "nishantjosh.dev",
+        "relevance": 0
+      },
+      {
+        "id": 49630026,
+        "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+        "domain": "gist.github.com",
+        "relevance": 0.9
+      },
+      {
+        "id": 49628576,
+        "title": "GNU Radio in the browser",
+        "domain": "gnuradioworld.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49630566,
+        "title": "Apple Watch Series 12",
+        "domain": "apple.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49628429,
+        "title": "Planet Labs' open satellite feed",
+        "domain": "tech.marksblogg.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49628614,
+        "title": "Understanding the recent DDoS attack against Read the Docs",
+        "domain": "about.readthedocs.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49586494,
+        "title": "Coyote v. Acme (1990)",
+        "domain": "newyorker.com",
+        "relevance": 0
+      },
+      {
+        "id": 49624394,
+        "title": "Flock Wants a Closely Surveilled World with No Exit",
+        "domain": "newyorker.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49584361,
+        "title": "Bespoke: A programming language for people who say please",
+        "domain": "blog.hofstede.it",
+        "relevance": 0.1
+      },
+      {
+        "id": 49546964,
+        "title": "Tension wood: A 'muscle' that can both bend and straighten plants",
+        "domain": "phys.org",
+        "relevance": 0
+      },
+      {
+        "id": 49619227,
+        "title": "I resigned from Anthropic today",
+        "domain": "twitter.com",
+        "relevance": 0.5
+      },
+      {
+        "id": 49624603,
+        "title": "DeepSeek launching v4.1 flash cheaper and more capable than v4 pro",
+        "domain": null,
+        "relevance": 0.6
+      },
+      {
+        "id": 49629209,
+        "title": "The UN challenges five centuries of cartography",
+        "domain": "not-ship.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49580761,
+        "title": "Researchers Spot Fake Ancient Pottery Using the Earth's Magnetic Field",
+        "domain": "smithsonianmag.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49619464,
+        "title": "27.5KB language-agnostic WebGPU syntax highlighter",
+        "domain": "gpu-lexer.vercel.app",
+        "relevance": 0.3
+      },
+      {
+        "id": 49615245,
+        "title": "Rivian's gambit for full autonomy",
+        "domain": "spectrum.ieee.org",
+        "relevance": 0.3
+      },
+      {
+        "id": 49621102,
+        "title": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+        "domain": "note.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49622561,
+        "title": "How GPT‑5.6 Sol helps run quantum computing experiments",
+        "domain": "openai.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49621751,
+        "title": "“Tweet” and the bird logo apparently enter the public domain",
+        "domain": "blog.ericgoldman.org",
+        "relevance": 0
+      }
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "posts": [
+      {
+        "id": 49643982,
+        "title": "Shopify is moving from React Native back to Swift and Kotlin",
+        "domain": "shopify.engineering",
+        "relevance": 0.1
+      },
+      {
+        "id": 49639408,
+        "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+        "domain": "mathstodon.xyz",
+        "relevance": 0.2
+      },
+      {
+        "id": 49643546,
+        "title": "Rust is tier-1 language at Microsoft",
+        "domain": "rustfoundation.org",
+        "relevance": 0.2
+      },
+      {
+        "id": 49639090,
+        "title": "DeepSeek v4.1 Flash",
+        "domain": "twitter.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49645443,
+        "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+        "domain": "cognition.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49645437,
+        "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
+        "domain": "spinoff.nasa.gov",
+        "relevance": 0.1
+      },
+      {
+        "id": 49627634,
+        "title": "Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls",
+        "domain": "pv-magazine.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49649213,
+        "title": "OpenAI Agents API",
+        "domain": "developers.openai.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49647134,
+        "title": "Music Theory for the 21st-Century Classroom",
+        "domain": "musictheory.pugetsound.edu",
+        "relevance": 0
+      },
+      {
+        "id": 49645686,
+        "title": "Neki – Sharded Postgres",
+        "domain": "planetscale.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49645907,
+        "title": "Forgejo <=16.0.3 Critical RCE",
+        "domain": "codeberg.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49637385,
+        "title": "Show HN: What if the speed of light was 5 km/h?",
+        "domain": "rivendell.dmitrybrant.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49587121,
+        "title": "Douglas Hofstadter: Analogy as the Core of Cognition [video]",
+        "domain": "youtube.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49642531,
+        "title": "List of references on Sony websites to players \"owning\" their digital games",
+        "domain": "consumerrights.wiki",
+        "relevance": 0.1
+      },
+      {
+        "id": 49649124,
+        "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
+        "domain": "auberon.xyz",
+        "relevance": 0.1
+      },
+      {
+        "id": 49636283,
+        "title": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+        "domain": "techcrunch.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49640646,
+        "title": "What algorithm did Windows XP use to choose your initial user picture?",
+        "domain": "devblogs.microsoft.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49599992,
+        "title": "Stockfish 19",
+        "domain": "stockfishchess.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49649222,
+        "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
+        "domain": "merybenavente.me",
+        "relevance": 0.3
+      },
+      {
+        "id": 49650418,
+        "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
+        "domain": "ntsb.gov",
+        "relevance": 0.1
+      },
+      {
+        "id": 49647404,
+        "title": "JEP 544: Ahead-of-Time Code Compilation",
+        "domain": "openjdk.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49641215,
+        "title": "The same nine streaming subscriptions cost $702/year more than in 2021",
+        "domain": "honestlyranked.com",
+        "relevance": 0
+      },
+      {
+        "id": 49633534,
+        "title": "Factoring RSA 260",
+        "domain": "cognition.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49623398,
+        "title": "Show HN: Compute polynomials twice as fast",
+        "domain": "thomasahle.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49621018,
+        "title": "Larger Pacific striped octopus",
+        "domain": "en.wikipedia.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49645754,
+        "title": "Silicon Valley is transforming the military-industrial complex? (2024)",
+        "domain": "costsofwar.watson.brown.edu",
+        "relevance": 0.5
+      },
+      {
+        "id": 49638280,
+        "title": "All grown-ups were once children, but only few of them remember it",
+        "domain": "mathstodon.xyz",
+        "relevance": 0
+      },
+      {
+        "id": 49592799,
+        "title": "Aardman (Wallace and Gromit) Is Selling Its Original Movie Puppets",
+        "domain": "gizmodo.com",
+        "relevance": 0
+      },
+      {
+        "id": 49646181,
+        "title": "I have a theory that software drives people insane",
+        "domain": "graybeard.ing",
+        "relevance": 0.2
+      },
+      {
+        "id": 49635384,
+        "title": "Blizzard Workers Win Historic Union Contract",
+        "domain": "latimes.com",
+        "relevance": 0
+      }
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "posts": [
+      {
+        "id": 49662371,
+        "title": "A misalignment of AI in mathematics",
+        "domain": "mathandai.org",
+        "relevance": 0.7
+      },
+      {
+        "id": 49645393,
+        "title": "Don't let anyone take away your big box of cables",
+        "domain": "blog.jim-nielsen.com",
+        "relevance": 0
+      },
+      {
+        "id": 49656225,
+        "title": "Claude is only available to people over 18 years",
+        "domain": "support.claude.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49666735,
+        "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+        "domain": "rubyhack.ai",
+        "relevance": 0.8
+      },
+      {
+        "id": 49622406,
+        "title": "Logo Programming",
+        "domain": "el.media.mit.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49626718,
+        "title": "A Design Space Exploration of Async/Await",
+        "domain": "cel.cs.brown.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49662990,
+        "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+        "domain": "dayzlegame.com",
+        "relevance": 0.5
+      },
+      {
+        "id": 49662214,
+        "title": "λ Snap – An inviting programming language for kids and adults for CS study",
+        "domain": "snap.berkeley.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49601138,
+        "title": "I've operated petabyte-scale ClickHouse clusters for 5 years",
+        "domain": "tinybird.co",
+        "relevance": 0.1
+      },
+      {
+        "id": 49662672,
+        "title": "The EPA is planning to scrap public review rules for data center pollution",
+        "domain": "capitalbnews.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49621546,
+        "title": "So you want to use OpenRouter?",
+        "domain": "mmoustafa.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49662020,
+        "title": "Psychoactive substances helped spur Andean civilization",
+        "domain": "science.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49662767,
+        "title": "Litelm: LiteLLM Without the Bloat",
+        "domain": "github.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49652105,
+        "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
+        "domain": "bbc.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49663373,
+        "title": "GrapheneOS' rewritten Messages app is released",
+        "domain": "github.com",
+        "relevance": 0
+      },
+      {
+        "id": 49660149,
+        "title": "Rune is now open source",
+        "domain": "rune.build",
+        "relevance": 0.1
+      },
+      {
+        "id": 49652237,
+        "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
+        "domain": "upsocl.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49656471,
+        "title": "RTK reports token savings, but our cost benchmarks disagree",
+        "domain": "quesma.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49624717,
+        "title": "AlphaGenome maps 9B DNA variants",
+        "domain": "spectrum.ieee.org",
+        "relevance": 0.7
+      },
+      {
+        "id": 49647300,
+        "title": "Detecting and countering misuse of AI: September 2026",
+        "domain": "anthropic.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49666146,
+        "title": "Project Blinkenlights",
+        "domain": "blinkenlights.de",
+        "relevance": 0.1
+      },
+      {
+        "id": 49651221,
+        "title": "Nine coding harnesses vs. your laptop",
+        "domain": "nasutton.notion.site",
+        "relevance": 0.2
+      },
+      {
+        "id": 49610834,
+        "title": "How the Chorleywood Bread Process transformed British bread",
+        "domain": "edconway.substack.com",
+        "relevance": 0
+      },
+      {
+        "id": 49655286,
+        "title": "Cherenkov Radiation",
+        "domain": "iaea.org",
+        "relevance": 0
+      },
+      {
+        "id": 49665864,
+        "title": "Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues",
+        "domain": "github.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49658299,
+        "title": "Houthis 'take control' of key island in global shipping route",
+        "domain": "bbc.com",
+        "relevance": 0
+      },
+      {
+        "id": 49606281,
+        "title": "Working with Git Worktrees in Magit",
+        "domain": "emacsredux.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49657850,
+        "title": "Ask HN: Can we please limit the AI news flood?",
+        "domain": null,
+        "relevance": 0.7
+      },
+      {
+        "id": 49658311,
+        "title": "Measuring the sloppiness of code",
+        "domain": "earendil.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49651372,
+        "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+        "domain": "system76.com",
+        "relevance": 0.9
+      }
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "posts": [
+      {
+        "id": 49674050,
+        "title": "Make your first edit to OpenStreetMap",
+        "domain": "high5apps.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49673098,
+        "title": "Nvidia is the central bank of AI",
+        "domain": "economist.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49645480,
+        "title": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
+        "domain": "tomshardware.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49672510,
+        "title": "We must pace the frontier",
+        "domain": "darioamodei.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49668386,
+        "title": "google.com/goto: Google's anti-scraping update",
+        "domain": "autom.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49639647,
+        "title": "IKEA made a mod for Skyrim [video]",
+        "domain": "youtube.com",
+        "relevance": 0
+      },
+      {
+        "id": 49625056,
+        "title": "Stabilizing Rust's Never Type",
+        "domain": "lwn.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49649789,
+        "title": "Show HN: Bodily Oddities",
+        "domain": "vester.si",
+        "relevance": 0
+      },
+      {
+        "id": 49619848,
+        "title": "Apple iPod Engraver (2019)",
+        "domain": "dunstanorchard.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49668706,
+        "title": "Navier-Stokes Announcement",
+        "domain": "claymath.org",
+        "relevance": 0
+      },
+      {
+        "id": 49674498,
+        "title": "Will there be a 7G?",
+        "domain": "arxiv.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49670032,
+        "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+        "domain": "eiln.github.io",
+        "relevance": 0.3
+      },
+      {
+        "id": 49665502,
+        "title": "Android NAT-T keepalive offload bypasses VPN lockdown",
+        "domain": "supuk.ch",
+        "relevance": 0.1
+      },
+      {
+        "id": 49675902,
+        "title": "Linux Zoom client proactively reading everything written to X11 clipboard",
+        "domain": "hachyderm.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49673580,
+        "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
+        "domain": "righto.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49624456,
+        "title": "Great Lakes sturgeon may be 400 years old:Scientists rethinking how to save them",
+        "domain": "cbc.ca",
+        "relevance": 0
+      },
+      {
+        "id": 49672842,
+        "title": "I made a build visualizer to understand Bun's compile times",
+        "domain": "lalitm.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49676820,
+        "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
+        "domain": "withspecific.com",
+        "relevance": 0.9
+      },
+      {
+        "id": 49658672,
+        "title": "I fixed a tractor using John Deere's self-repair service. Farmers aren't sold",
+        "domain": "wired.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49671329,
+        "title": "Fuck it, make it anyway",
+        "domain": "joelotter.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49672365,
+        "title": "A Mathematical Framework for Transformer Circuits (2021)",
+        "domain": "transformer-circuits.pub",
+        "relevance": 0.5
+      },
+      {
+        "id": 49668777,
+        "title": "Usenet rewind archive search engine",
+        "domain": "usenet-rewind.com",
+        "relevance": 0
+      },
+      {
+        "id": 49671159,
+        "title": "The worst spam emails: iLands AI agent hustle",
+        "domain": "tedium.co",
+        "relevance": 0.7
+      },
+      {
+        "id": 49643011,
+        "title": "Designing for Dual Screen and Foldable Devices with CSS (2023)",
+        "domain": "blog.stephaniestimac.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49623933,
+        "title": "Performance of WebAssembly Runtimes in 2026",
+        "domain": "00f.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49643543,
+        "title": "LRU is harder to beat than the KV-cache papers suggest",
+        "domain": "github.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49665549,
+        "title": "Forgotten Woodlands",
+        "domain": "storymaps.arcgis.com",
+        "relevance": 0
+      },
+      {
+        "id": 49634928,
+        "title": "Testing Race Conditions",
+        "domain": "projectzero.google",
+        "relevance": 0.1
+      },
+      {
+        "id": 49625108,
+        "title": "Eating Fruit Skins",
+        "domain": "pgadey.ca",
+        "relevance": 0
+      },
+      {
+        "id": 49671237,
+        "title": "How Trail of Bits helps verify the integrity of Signal chats",
+        "domain": "blog.trailofbits.com",
+        "relevance": 0.2
+      }
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "posts": [
+      {
+        "id": 49688695,
+        "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+        "domain": "vals.ai",
+        "relevance": 0.1
+      },
+      {
+        "id": 49686445,
+        "title": "Why is Google still serving dodgy ads?",
+        "domain": "atomic14.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49678969,
+        "title": "Why are AI agents lying, cheating and coordinating?",
+        "domain": "yoshuabengio.org",
+        "relevance": 0.9
+      },
+      {
+        "id": 49678683,
+        "title": "Everyone should slow down AI development except for me",
+        "domain": "xeiaso.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49684393,
+        "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+        "domain": "lesswrong.com",
+        "relevance": 0.6
+      },
+      {
+        "id": 49681152,
+        "title": "JetKVM Mini",
+        "domain": "jetkvm.com",
+        "relevance": 0
+      },
+      {
+        "id": 49683953,
+        "title": "Data collected by cars and sold to third parties",
+        "domain": "theverge.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49684356,
+        "title": "CUDA for AMD on Windows",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49638071,
+        "title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
+        "domain": "bensimms.moe",
+        "relevance": 0.1
+      },
+      {
+        "id": 49642645,
+        "title": "Julia 1.13 highlights",
+        "domain": "julialang.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49681545,
+        "title": "Homebrew 7.0.0",
+        "domain": "brew.sh",
+        "relevance": 0
+      },
+      {
+        "id": 49683262,
+        "title": "Why is the x86 undefined instruction called ud2? Why 2?",
+        "domain": "devblogs.microsoft.com",
+        "relevance": 0.4
+      },
+      {
+        "id": 49636479,
+        "title": "Getting 50 GB/S Back from the Apple Neural Engine",
+        "domain": "eiln.github.io",
+        "relevance": 0.2
+      },
+      {
+        "id": 49677577,
+        "title": "Don't be the out of touch Kung Fu master",
+        "domain": "twitter.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49688391,
+        "title": "Flawed routers flood University of Wisconsin internet time server (2003)",
+        "domain": "pages.cs.wisc.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49679459,
+        "title": "The Interim Computer Museum",
+        "domain": "icm.museum",
+        "relevance": 0
+      },
+      {
+        "id": 49684196,
+        "title": "Making Startups Powerful",
+        "domain": "paulgraham.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49685253,
+        "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+        "domain": "techcrunch.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49653311,
+        "title": "Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace",
+        "domain": "aprilnea.me",
+        "relevance": 0.6
+      },
+      {
+        "id": 49679643,
+        "title": "Aligned to whom?",
+        "domain": "hyperbo.la",
+        "relevance": 0.8
+      },
+      {
+        "id": 49676324,
+        "title": "LG says we're fake news [video]",
+        "domain": "youtube.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49629624,
+        "title": "Vintage Scientific Papers with LaTeX",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49677450,
+        "title": "P(doom)",
+        "domain": "lucumr.pocoo.org",
+        "relevance": 0.6
+      },
+      {
+        "id": 49683033,
+        "title": "'Fingerprints' inside the Sun could reveal if it once swallowed a planet",
+        "domain": "ras.ac.uk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49678435,
+        "title": "AgentsDock: An IDE designed for agentic AI research",
+        "domain": "agentsdock.net",
+        "relevance": 0.7
+      },
+      {
+        "id": 49686766,
+        "title": "I'm being cyberattacked by Tesla, Inc",
+        "domain": "dreamstation.systems",
+        "relevance": 0.1
+      },
+      {
+        "id": 49685991,
+        "title": "David Sacks: OpenAI and Anthropic Don't Need Regulations to Pace Frontier Models",
+        "domain": "twitter.com",
+        "relevance": 0.5
+      },
+      {
+        "id": 49678423,
+        "title": "TailTalk: A modern async user space AppleTalk stack with Rust and Tokio",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49688157,
+        "title": "Mark Zuckerberg: \"Cambridge Analytica\" (2017)",
+        "domain": "twitter.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49655450,
+        "title": "Base84 deserves a place in file names",
+        "domain": "00f.net",
+        "relevance": 0.1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "posts": [
+      {
+        "id": 49701004,
+        "title": "iOS 27, iPadOS 27, and macOS 27",
+        "domain": "apple.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49695876,
+        "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+        "domain": "tenderlovemaking.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49700477,
+        "title": "Pion, an agent designed to run any company autonomously",
+        "domain": "andonlabs.com",
+        "relevance": 0.9
+      },
+      {
+        "id": 49694296,
+        "title": "XCancel service is suspended until further notice",
+        "domain": "xcancel.com",
+        "relevance": 0
+      },
+      {
+        "id": 49704132,
+        "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+        "domain": "effort.news",
+        "relevance": 0.2
+      },
+      {
+        "id": 49700661,
+        "title": "Steam Frame starts at $1059",
+        "domain": "store.steampowered.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49699158,
+        "title": "Distributed Systems Classics (2017)",
+        "domain": "nvartolomei.com",
+        "relevance": 0
+      },
+      {
+        "id": 49686380,
+        "title": "Ask HN: What are you working on? (September 2026)",
+        "domain": null,
+        "relevance": 0.2
+      },
+      {
+        "id": 49698699,
+        "title": "A beginning for mathematics",
+        "domain": "daniellitt.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49698607,
+        "title": "Principles for Fast Tokio Applications",
+        "domain": "dial9-rs.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49697893,
+        "title": "Dario, Please",
+        "domain": "pop.rdi.sh",
+        "relevance": 0.3
+      },
+      {
+        "id": 49689048,
+        "title": "Registration without a phone number on Signal will use zero-knowledge proofs",
+        "domain": "community.signalusers.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49640913,
+        "title": "I added a non-wi-fi Mitsubishi AC to Home Assistant",
+        "domain": "medium.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49690174,
+        "title": "Apple's Dimensional Drawings",
+        "domain": "developer.apple.com",
+        "relevance": 0
+      },
+      {
+        "id": 49638510,
+        "title": "Spaceships (Reverse Asteroid)",
+        "domain": "spaceships.treybastian.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49670852,
+        "title": "An atlas of periodic solutions to the three-body problem",
+        "domain": "threebodyorbits.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49688259,
+        "title": "Mullenweg has returned as CEO after attempted board ouster",
+        "domain": "techcrunch.com",
+        "relevance": 0
+      },
+      {
+        "id": 49704246,
+        "title": "Charts built for Chat",
+        "domain": "dbtcharts.com",
+        "relevance": 0.6
+      },
+      {
+        "id": 49693610,
+        "title": "EuroBirdPortal – Live bird movements across Europe",
+        "domain": "eurobirdportal.org",
+        "relevance": 0
+      },
+      {
+        "id": 49699489,
+        "title": "How my e-reader lost its stripes",
+        "domain": "serpentine.com",
+        "relevance": 0
+      },
+      {
+        "id": 49673689,
+        "title": "Compressing a flag to 11 bits",
+        "domain": "read.vantezzen.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49696453,
+        "title": "People who can't picture anything are rewriting the science of imagination",
+        "domain": "dailyneuron.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49696697,
+        "title": "Ubuntu 26.10 completes transition to Rust-based coreutils",
+        "domain": "omgubuntu.co.uk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49700255,
+        "title": "Cloudflare AKE cuts origin HelloRetryRequests from 52% to 3.7%",
+        "domain": "blog.cloudflare.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49699648,
+        "title": "Why don't machine learning research agents overfit?",
+        "domain": "amazon.science",
+        "relevance": 0.6
+      },
+      {
+        "id": 49697014,
+        "title": "Notes on gotchas while migrating 35kb preprompts from Opus to self-hosted Ollama",
+        "domain": "patrickmccanna.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49690554,
+        "title": "The case against JPEG XL",
+        "domain": "giannirosato.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49649164,
+        "title": "The GDR and Vietnam: From Fake Coffee to Coffee Empire",
+        "domain": "katjahoyer.uk",
+        "relevance": 0
+      },
+      {
+        "id": 49693613,
+        "title": "A 386 PC for Your RP2350",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49691343,
+        "title": "Nike exits the S&P 100 after 18 years and a $200B market-cap wipeout",
+        "domain": "fortune.com",
+        "relevance": 0
+      }
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "posts": [
+      {
+        "id": 49711544,
+        "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+        "domain": "github.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49717558,
+        "title": "Introducing System One Models and Jev",
+        "domain": "typesafe.ai",
+        "relevance": 0.8
+      },
+      {
+        "id": 49716176,
+        "title": "An update on Wayback Machine access",
+        "domain": "blog.archive.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49715947,
+        "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+        "domain": "blog.google",
+        "relevance": 0.8
+      },
+      {
+        "id": 49708431,
+        "title": "I can't stop thinking about Papua New Guinea",
+        "domain": "notnottalmud.substack.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49710109,
+        "title": "Let's make quality the norm again",
+        "domain": "forbrukerradet.no",
+        "relevance": 0.1
+      },
+      {
+        "id": 49710253,
+        "title": "Suspected sabotage causes major Netherlands rail disruption",
+        "domain": "bbc.com",
+        "relevance": 0
+      },
+      {
+        "id": 49712278,
+        "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+        "domain": "withcapsule.app",
+        "relevance": 0.1
+      },
+      {
+        "id": 49710883,
+        "title": "25 years of mass surveillance is enough",
+        "domain": "schneier.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49718928,
+        "title": "German Rheinmetall open-sources its Battlesuite connected weapon system protcol",
+        "domain": "rheinmetall.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49716476,
+        "title": "We got admin access to Baseten's production GitHub",
+        "domain": "strix.ai",
+        "relevance": 0.7
+      },
+      {
+        "id": 49697496,
+        "title": "Most people prefer traditional architecture",
+        "domain": "worksinprogress.news",
+        "relevance": 0
+      },
+      {
+        "id": 49707473,
+        "title": "US confirms for first time it has deployed space weapons",
+        "domain": "bbc.com",
+        "relevance": 0
+      },
+      {
+        "id": 49715927,
+        "title": "Why I'm still bearish on LLMs after Navier-Stokes",
+        "domain": "dank.systems",
+        "relevance": 0.6
+      },
+      {
+        "id": 49716953,
+        "title": "Chopping up books when they're physically too big",
+        "domain": "attainablefelicity.mattkirkland.com",
+        "relevance": 0
+      },
+      {
+        "id": 49712102,
+        "title": "Show HN: Hacking a $20 4G wireless hotspot into a texting device",
+        "domain": "bkovac.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49675817,
+        "title": "4,400-Year-Old Tomb of Egyptian Judge Found at Saqqara with Colors on Walls",
+        "domain": "arkeonews.net",
+        "relevance": 0
+      },
+      {
+        "id": 49717605,
+        "title": "WangNet – 1.8 MB, zero-dependency Numberwang adjudication in 11 languages",
+        "domain": "github.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49713024,
+        "title": "The Inference Hardware Revolution of 2026",
+        "domain": "spectrum.ieee.org",
+        "relevance": 0.8
+      },
+      {
+        "id": 49707627,
+        "title": "Linux from Scratch",
+        "domain": "linuxfromscratch.org",
+        "relevance": 0
+      },
+      {
+        "id": 49697477,
+        "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+        "domain": "nathannaveen.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49713262,
+        "title": "The CSS Zen Garden dream, finally shipped",
+        "domain": "josprague.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49718822,
+        "title": "Jean-Pierre Serre turns 100",
+        "domain": "mathshistory.st-andrews.ac.uk",
+        "relevance": 0
+      },
+      {
+        "id": 49684289,
+        "title": "OpenArm: An open-source 7DOF humanoid arm",
+        "domain": "github.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49717280,
+        "title": "Learning to solve hard problems in RL for LLMs by never giving up",
+        "domain": "mnoukhov.github.io",
+        "relevance": 0.7
+      },
+      {
+        "id": 49709381,
+        "title": "Alternatives to MinIO for single-node local S3",
+        "domain": "rmoff.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49708993,
+        "title": "CSS-Tricks in Limbo",
+        "domain": "vale.rocks",
+        "relevance": 0
+      },
+      {
+        "id": 49701182,
+        "title": "Backprop Alternative: Augmented Lagrangian Predictive Coding",
+        "domain": "pub.sakana.ai",
+        "relevance": 0.9
+      },
+      {
+        "id": 49676425,
+        "title": "Show HN: Redis City – Explore how Redis works in an interactive 3D model",
+        "domain": "poltora.dev",
+        "relevance": 0.2
+      },
+      {
+        "id": 49713999,
+        "title": "Cartesian – AI 3D Modeling for Design",
+        "domain": "formas.ai",
+        "relevance": 0.9
+      }
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "posts": [
+      {
+        "id": 49731285,
+        "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+        "domain": "rohanbansal.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49729000,
+        "title": "Small programming tricks",
+        "domain": "will-keleher.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49732270,
+        "title": "Xiaomi Mimo 2.6 live post-training dashboard",
+        "domain": "mimo.xiaomi.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49723408,
+        "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
+        "domain": "mistral.ai",
+        "relevance": 0.6
+      },
+      {
+        "id": 49719249,
+        "title": "AWS says it can't restore some data from mideast facilities struck by Iran",
+        "domain": "wsj.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49726586,
+        "title": "Hackers Got Inside a Flock Camera",
+        "domain": "wired.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49721322,
+        "title": "Apple Reference Image: A New Approach for Verified Photography",
+        "domain": "security.apple.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49717638,
+        "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
+        "domain": "codyho.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49732513,
+        "title": "Backups Aren't Simple",
+        "domain": "filipovski.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49732931,
+        "title": "Breaking the 1.58-bit Barrier for Ternary LLMs",
+        "domain": "arxiv.org",
+        "relevance": 0.9
+      },
+      {
+        "id": 49693971,
+        "title": "Show HN: I made a flight simulator, except you're just a passenger",
+        "domain": "inflightsimulator.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49711424,
+        "title": "Performance Improvements in .NET 11",
+        "domain": "devblogs.microsoft.com",
+        "relevance": 0
+      },
+      {
+        "id": 49719596,
+        "title": "The engineering behind the US Strategic Petroleum Reserve",
+        "domain": "johnjwang.com",
+        "relevance": 0
+      },
+      {
+        "id": 49726955,
+        "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+        "domain": "arxiv.org",
+        "relevance": 0.8
+      },
+      {
+        "id": 49677916,
+        "title": "Japan's book scene is moving from bookstores to libraries",
+        "domain": "untranslatedjp.substack.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49719938,
+        "title": "Recreating Voodoo Graphics and a Late-1990s Gaming PC on an FPGA",
+        "domain": "nand2mario.github.io",
+        "relevance": 0.3
+      },
+      {
+        "id": 49724141,
+        "title": "EU chief opens door for Canada to become 'associate member'",
+        "domain": "bbc.com",
+        "relevance": 0
+      },
+      {
+        "id": 49734264,
+        "title": "OpenSpec – A lightweight and configurable AI spec framework",
+        "domain": "openspec.dev",
+        "relevance": 0.7
+      },
+      {
+        "id": 49727592,
+        "title": "Anatomy of a Texture",
+        "domain": "agentlien.github.io",
+        "relevance": 0
+      },
+      {
+        "id": 49674451,
+        "title": "Reversing Factorio's RNG",
+        "domain": "gegell.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49724927,
+        "title": "The Google Play app review process now regularly takes longer than a week",
+        "domain": "gultsch.social",
+        "relevance": 0.1
+      },
+      {
+        "id": 49705944,
+        "title": "Doing Everyone Else's Job",
+        "domain": "yosefk.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49692844,
+        "title": "Anecdotally, programmers dislike \"reduce\"",
+        "domain": "evanhahn.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49720164,
+        "title": "Saving Jet Fuel",
+        "domain": "tech.marksblogg.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49710903,
+        "title": "Tell the speakers that you liked their talks",
+        "domain": "ohhelloana.blog",
+        "relevance": 0.1
+      },
+      {
+        "id": 49727659,
+        "title": "The DeepMind Institute",
+        "domain": "institute.deepmind.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49724488,
+        "title": "Salesforce Global Outage",
+        "domain": "status.salesforce.com",
+        "relevance": 0
+      },
+      {
+        "id": 49721548,
+        "title": "Negativland, Culture Jamming, and the Art of Making Something New",
+        "domain": "blog.archive.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49725356,
+        "title": "Original Sony PlayStation 2 security chip 'broken wide open' after 26 years",
+        "domain": "tomshardware.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49694035,
+        "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
+        "domain": "arxiv.org",
+        "relevance": 0.9
+      }
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "posts": [
+      {
+        "id": 49724881,
+        "title": "Nvidia announces native GPU programming in Rust",
+        "domain": "developer.nvidia.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49715813,
+        "title": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA",
+        "domain": "global.fujitsu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49743097,
+        "title": "Hister: A private search engine for the pages you visit and the files you keep",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49746618,
+        "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+        "domain": "prismml.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49726007,
+        "title": "Wax motor",
+        "domain": "en.wikipedia.org",
+        "relevance": 0
+      },
+      {
+        "id": 49745940,
+        "title": "Astra for Law",
+        "domain": "openai.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49746163,
+        "title": "Bend – a language that blocks AI mistakes via proof and runs on GPUs",
+        "domain": "bend-lang.com",
+        "relevance": 0.9
+      },
+      {
+        "id": 49738091,
+        "title": "Why I didn’t sign the Fields medallists’ letter",
+        "domain": "gowers.wordpress.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49737922,
+        "title": "How GLM built its own inference infrastructure",
+        "domain": "z.ai",
+        "relevance": 0.5
+      },
+      {
+        "id": 49734929,
+        "title": "The Return of Sail Power: Cargo Ships Are Turning Back to the Wind",
+        "domain": "gcaptain.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49737787,
+        "title": "CCC invites all model citizens to 40C3",
+        "domain": "events.ccc.de",
+        "relevance": 0.1
+      },
+      {
+        "id": 49742355,
+        "title": "CrowdSec Source Code Leak",
+        "domain": "crowdsec.net",
+        "relevance": 0.2
+      },
+      {
+        "id": 49718773,
+        "title": "My temporary PHP fix from 2014 has nearly 20M installs. Today I'm deprecating it",
+        "domain": "jakeasmith.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49737849,
+        "title": "One year of sponsored Servo development",
+        "domain": "servo.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49735930,
+        "title": "Keys Not Included: recovering the signing keys for US driver's license barcodes",
+        "domain": "ryan.science",
+        "relevance": 0.1
+      },
+      {
+        "id": 49733726,
+        "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
+        "domain": "harnesstax.github.io",
+        "relevance": 0.5
+      },
+      {
+        "id": 49740260,
+        "title": "The American Religion of Self-Storage Facilities",
+        "domain": "newyorker.com",
+        "relevance": 0
+      },
+      {
+        "id": 49746290,
+        "title": "Flet 1.0 – Build cross-platform apps in Python",
+        "domain": "flet.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49743483,
+        "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+        "domain": "arxiv.org",
+        "relevance": 0.9
+      },
+      {
+        "id": 49700153,
+        "title": "Developing provably correct Rust code with Verus",
+        "domain": "amazon.science",
+        "relevance": 0.1
+      },
+      {
+        "id": 49742353,
+        "title": "Rate limits on GitLab.com are changing",
+        "domain": "about.gitlab.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49740105,
+        "title": "Show HN: Share your AI Setup, Learn from others",
+        "domain": "mysetup.ai",
+        "relevance": 0.8
+      },
+      {
+        "id": 49685835,
+        "title": "The Relation Between Mathematics and Physics by Paul Dirac (1939)",
+        "domain": "damtp.cam.ac.uk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49736466,
+        "title": "Cloudflare/Security-Audit-Skill",
+        "domain": "github.com",
+        "relevance": 0.5
+      },
+      {
+        "id": 49731282,
+        "title": "Reverse-engineered Jev-like model",
+        "domain": "github.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49721291,
+        "title": "A 32-year-old bug walks into a Telnet server",
+        "domain": "labs.watchtowr.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49715318,
+        "title": "Comparison of Malloc() Algorithms",
+        "domain": "egbert.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49746346,
+        "title": "Show HN: Snapdrop: Instantly share files between devices. No setup, no signup",
+        "domain": "snapdrop.me",
+        "relevance": 0.1
+      },
+      {
+        "id": 49743049,
+        "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
+        "domain": null,
+        "relevance": 0.8
+      },
+      {
+        "id": 49714096,
+        "title": "TSMC revealing details about next gen A14 node",
+        "domain": "iedm26.mapyourshow.com",
+        "relevance": 0.1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "posts": [
+      {
+        "id": 49758736,
+        "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+        "domain": "grapheneos.social",
+        "relevance": 0.1
+      },
+      {
+        "id": 49754785,
+        "title": "Cloudflare Quick Tunnels",
+        "domain": "try.cloudflare.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49752041,
+        "title": "OpenJev",
+        "domain": "openjev.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49758580,
+        "title": "Saving another 100TB of RAM",
+        "domain": "blog.cloudflare.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49752056,
+        "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+        "domain": "techcrunch.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49748553,
+        "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
+        "domain": "cactuscompute.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49760187,
+        "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+        "domain": "code.claude.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49757050,
+        "title": "Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug",
+        "domain": "donjon.ledger.com",
+        "relevance": 0.2
+      },
+      {
+        "id": 49749656,
+        "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+        "domain": "hacktron.ai",
+        "relevance": 0.6
+      },
+      {
+        "id": 49747925,
+        "title": "Qwen 3.8 Omni Flash",
+        "domain": "qwen.ai",
+        "relevance": 0.7
+      },
+      {
+        "id": 49753211,
+        "title": "I don't like passkeys",
+        "domain": "hawksley.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49750152,
+        "title": "Jemalloc 5.4.0",
+        "domain": "github.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49749369,
+        "title": "Minimal Phone 2",
+        "domain": "minimalcompany.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49750694,
+        "title": "Inside ZCode: Silently uploading your Git history to the cloud",
+        "domain": "blog.ferstar.org",
+        "relevance": 0.6
+      },
+      {
+        "id": 49758615,
+        "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
+        "domain": "arxiv.org",
+        "relevance": 0.9
+      },
+      {
+        "id": 49750094,
+        "title": "The scourge of x86 emulation",
+        "domain": "fex-emu.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49715936,
+        "title": "How do we prevent mathemathics from devolving into the Medieval Era of secrecy?",
+        "domain": "mathoverflow.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49749724,
+        "title": "Warez: The Infrastructure and Aesthetics of Piracy (2021)",
+        "domain": "archive.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49749771,
+        "title": "Pre-Greek: The lost language hidden within Ancient Greek",
+        "domain": "linguisticdiscovery.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49710447,
+        "title": "Diplodocus, Long Thought Exclusively American, Turns Up in Spain",
+        "domain": "sci.news",
+        "relevance": 0
+      },
+      {
+        "id": 49746407,
+        "title": "The most important product decision is what you don't build",
+        "domain": "liamnugent.me",
+        "relevance": 0.1
+      },
+      {
+        "id": 49757520,
+        "title": "US Military had close call after using AI for hallucinated intelligence report",
+        "domain": "cnn.com",
+        "relevance": 0.8
+      },
+      {
+        "id": 49746406,
+        "title": "C++26: Trivial infinite loops are no longer undefined behaviour",
+        "domain": "sandordargo.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49731413,
+        "title": "Cyclomatic Complexity in C#",
+        "domain": "blog.ndepend.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49752614,
+        "title": "Warren Buffett Steps Down as Berkshire Chairman, Names Son to Replace Him",
+        "domain": "nytimes.com",
+        "relevance": 0
+      },
+      {
+        "id": 49746626,
+        "title": "How SpaceX streamlined the Raptor engine",
+        "domain": "construction-physics.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49755160,
+        "title": "North Korean nuclear test sets off years of earthquakes",
+        "domain": "science.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49758419,
+        "title": "Xcode 27.1 Beta Release Notes",
+        "domain": "developer.apple.com",
+        "relevance": 0
+      },
+      {
+        "id": 49755024,
+        "title": "I vibed a proof of Conway's conjecture",
+        "domain": "overreacted.io",
+        "relevance": 0.3
+      },
+      {
+        "id": 49746628,
+        "title": "How Uber Protects Against Retry Storms",
+        "domain": "uber.com",
+        "relevance": 0.1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "posts": [
+      {
+        "id": 49764791,
+        "title": "AI-generated posters don’t have to be horrible",
+        "domain": "john.hartnup.uk",
+        "relevance": 0.7
+      },
+      {
+        "id": 49765348,
+        "title": "I built non-autoregressive decision models with RL a year ago",
+        "domain": "laya.convaiinnovations.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49763928,
+        "title": "If math is more than proof, we need to better celebrate the rest of it",
+        "domain": "terrytao.wordpress.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49747070,
+        "title": "How to Write with an LLM",
+        "domain": "sockpuppet.org",
+        "relevance": 0.7
+      },
+      {
+        "id": 49763697,
+        "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
+        "domain": "med.stanford.edu",
+        "relevance": 0.1
+      },
+      {
+        "id": 49763296,
+        "title": "San Francisco Onion Futures Company",
+        "domain": "onionfutures.com",
+        "relevance": 0
+      },
+      {
+        "id": 49763987,
+        "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+        "domain": "prinzai.com",
+        "relevance": 0.3
+      },
+      {
+        "id": 49766966,
+        "title": "Brood War Bench",
+        "domain": "bw.swerdlow.dev",
+        "relevance": 0.3
+      },
+      {
+        "id": 49766637,
+        "title": "What Zig felt like, coming from Rust",
+        "domain": "besok.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49744704,
+        "title": "The first new cat species discovered in 100 years",
+        "domain": "nationalgeographic.com",
+        "relevance": 0
+      },
+      {
+        "id": 49761432,
+        "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+        "domain": "spectrum.ieee.org",
+        "relevance": 0.8
+      },
+      {
+        "id": 49769944,
+        "title": "English: A vs. An",
+        "domain": "redblobgames.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49734467,
+        "title": "Asking authors about their own papers",
+        "domain": "medium.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49769676,
+        "title": "Measure internet censorship",
+        "domain": "ooni.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49720143,
+        "title": "The Secret Life of Circuits",
+        "domain": "blog.coredump.cx",
+        "relevance": 0.1
+      },
+      {
+        "id": 49762744,
+        "title": "SDCC – Small Device C Compiler",
+        "domain": "sdcc.sourceforge.net",
+        "relevance": 0.1
+      },
+      {
+        "id": 49769405,
+        "title": "ZK-JPEG: Zero-Knowledge Image Editing and Compression",
+        "domain": "eprint.iacr.org",
+        "relevance": 0.7
+      },
+      {
+        "id": 49762687,
+        "title": "Science Is Open Software",
+        "domain": "jepedersen.dk",
+        "relevance": 0.1
+      },
+      {
+        "id": 49766611,
+        "title": "Tin: full-text search for Postgres",
+        "domain": "planetscale.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49730069,
+        "title": "You can run Git on object storage if you re-make packfiles",
+        "domain": "tigrisdata.com",
+        "relevance": 0.1
+      },
+      {
+        "id": 49734131,
+        "title": "Why building a Rust LSP is hard",
+        "domain": "rust-glancer.github.io",
+        "relevance": 0.1
+      },
+      {
+        "id": 49742697,
+        "title": "New evidence for hidden chambers beyond Tutankhamun's tomb",
+        "domain": "nature.com",
+        "relevance": 0
+      },
+      {
+        "id": 49731996,
+        "title": "Deodands put a price on objects that caused death",
+        "domain": "daily.jstor.org",
+        "relevance": 0
+      },
+      {
+        "id": 49768833,
+        "title": "Btrfs/ZFS/bcachefs under workloads classic benchmarks skip",
+        "domain": "bartosz.fenski.pl",
+        "relevance": 0.1
+      },
+      {
+        "id": 49767937,
+        "title": "I think you should almost never use AI to write",
+        "domain": "erichgrunewald.substack.com",
+        "relevance": 0.7
+      },
+      {
+        "id": 49756121,
+        "title": "Black Holes or Black Hole Stars? Astronomers Spar over 'Little Red Dots'",
+        "domain": "quantamagazine.org",
+        "relevance": 0.1
+      },
+      {
+        "id": 49754194,
+        "title": "UFO Series Home Page: \"UFO\" TV Series from 1970",
+        "domain": "ufoseries.com",
+        "relevance": 0
+      },
+      {
+        "id": 49735010,
+        "title": "Suzanne Ciani's Buchla Cookbook",
+        "domain": "echo.orpheusinstituut.be",
+        "relevance": 0.1
+      },
+      {
+        "id": 49726773,
+        "title": "Goroutine Leak Profiles",
+        "domain": "go.dev",
+        "relevance": 0.1
+      },
+      {
+        "id": 49735541,
+        "title": "Ctenophores: Wonders of Biology",
+        "domain": "quantamagazine.org",
+        "relevance": 0
+      }
+    ]
+  }
+]
