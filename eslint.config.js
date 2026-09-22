@@ -19,7 +19,9 @@ export default defineConfig([
       globals: globals.browser,
     },
     rules: {
-      complexity: ["error", { max: 3, variant: "modified" }],
+      "max-depth": ["error", 2],
+      "max-lines-per-function": ["error", { max: 6, skipBlankLines: true }],
+      "max-params": ["error", 2],
     },
   },
 ]);
