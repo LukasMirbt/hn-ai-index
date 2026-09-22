@@ -29,13 +29,3 @@ export default function App() {
     </div>
   );
 }
-
-export function a(x: number) {
-  if (true) {
-    return x;
-  } else if (false) {
-    return x + 1;
-  } else {
-    return 4; // 3rd path
-  }
-}

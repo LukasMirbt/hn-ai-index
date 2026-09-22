@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "npm run format && npm run tsc && npm run lint && npm run coverage"
+      }
+    ]
+  }
+}
