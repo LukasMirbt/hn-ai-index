@@ -14,7 +14,12 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { fetchPost, fetchCommentText, fetchBottomCommentIds, fetchArticleText } from "./hnApi.js";
+import {
+  fetchPost,
+  fetchCommentText,
+  fetchBottomCommentIds,
+  fetchArticleText,
+} from "./hnApi.js";
 import type { Candidate } from "./fetchCandidates.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -26,7 +31,9 @@ const relevance = Number(relevanceArg);
 const validRelevance = !isNaN(relevance) && relevance >= 0 && relevance <= 1;
 
 if (!idArg || !validRelevance) {
-  console.error("Usage: tsx scripts/eval/addTestCase.ts <hnPostId> <relevance>");
+  console.error(
+    "Usage: tsx scripts/eval/addTestCase.ts <hnPostId> <relevance>",
+  );
   console.error("  relevance:  0.0–1.0   (how much is this post about AI?)");
   process.exit(1);
 }
@@ -44,12 +51,16 @@ if (!post) {
   process.exit(1);
 }
 
-const topCommentTexts = await Promise.all(post.kids.slice(0, 5).map(fetchCommentText));
+const topCommentTexts = await Promise.all(
+  post.kids.slice(0, 5).map(fetchCommentText),
+);
 const topComments = topCommentTexts.filter((c): c is string => c !== null);
 
 const bottomIds = fetchBottomCommentIds(post.kids, 5);
 const bottomCommentTexts = await Promise.all(bottomIds.map(fetchCommentText));
-const bottomComments = bottomCommentTexts.filter((c): c is string => c !== null).slice(0, 5);
+const bottomComments = bottomCommentTexts
+  .filter((c): c is string => c !== null)
+  .slice(0, 5);
 
 const articleText = post.url ? await fetchArticleText(post.url) : null;
 
@@ -65,7 +76,9 @@ const entry: Candidate = {
   label: { relevance },
 };
 
-const existing: Candidate[] = JSON.parse(readFileSync(TEST_CASES_PATH, "utf-8"));
+const existing: Candidate[] = JSON.parse(
+  readFileSync(TEST_CASES_PATH, "utf-8"),
+);
 
 if (existing.some((c) => c.id === id)) {
   console.error(`Post ${id} already exists in testCases.json.`);

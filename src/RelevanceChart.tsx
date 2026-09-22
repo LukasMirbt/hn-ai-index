@@ -33,9 +33,11 @@ export default function RelevanceChart({ data }: Props) {
           axisLine={{ stroke: "#333" }}
           tickFormatter={(v: number) => v.toFixed(1)}
         />
-        <Tooltip content={({ active, payload, label }: TooltipContentProps) => (
+        <Tooltip
+          content={({ active, payload, label }: TooltipContentProps) => (
             <ChartTooltip active={active} payload={payload} label={label} />
-          )} />
+          )}
+        />
         <Line
           type="monotone"
           dataKey="meanRelevance"

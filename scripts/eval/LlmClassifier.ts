@@ -24,13 +24,18 @@ function buildUserPrompt(post: Post): string {
   parts.push(`Title: ${post.title}`);
   if (post.domain) parts.push(`Domain: ${post.domain}`);
   if (post.text) parts.push(`Post text: ${post.text.slice(0, 500)}`);
-  if (post.articleText) parts.push(`Article excerpt: ${post.articleText.slice(0, 1000)}`);
+  if (post.articleText)
+    parts.push(`Article excerpt: ${post.articleText.slice(0, 1000)}`);
 
   if (post.topComments && post.topComments.length > 0) {
-    parts.push(`Top comments:\n${post.topComments.map((c, i) => `  ${i + 1}. ${c.slice(0, 200)}`).join("\n")}`);
+    parts.push(
+      `Top comments:\n${post.topComments.map((c, i) => `  ${i + 1}. ${c.slice(0, 200)}`).join("\n")}`,
+    );
   }
   if (post.bottomComments && post.bottomComments.length > 0) {
-    parts.push(`Bottom comments:\n${post.bottomComments.map((c, i) => `  ${i + 1}. ${c.slice(0, 200)}`).join("\n")}`);
+    parts.push(
+      `Bottom comments:\n${post.bottomComments.map((c, i) => `  ${i + 1}. ${c.slice(0, 200)}`).join("\n")}`,
+    );
   }
 
   return parts.join("\n\n");
@@ -49,15 +54,19 @@ async function classifyAsync(post: Post): Promise<Classification> {
   });
 
   if (!response.ok) {
-    throw new Error(`Ollama request failed: ${response.status} ${response.statusText}`);
+    throw new Error(
+      `Ollama request failed: ${response.status} ${response.statusText}`,
+    );
   }
 
-  const data = await response.json() as { response: string };
+  const data = (await response.json()) as { response: string };
   const raw = data.response.trim();
 
   // Parse the first float found in the response
   const match = raw.match(/\d+\.?\d*/);
-  const relevance = match ? Math.min(1, Math.max(0, parseFloat(match[0]))) : 0.5;
+  const relevance = match
+    ? Math.min(1, Math.max(0, parseFloat(match[0])))
+    : 0.5;
 
   return {
     relevance,

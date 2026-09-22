@@ -44,11 +44,15 @@ async function fetchFrontPageIds(date: string): Promise<number[]> {
   const html = await res.text();
 
   const doc = parseDocument(html);
-  const anchors = selectAll("a[href]", doc) as unknown as Array<{ attribs: { href: string } }>;
+  const anchors = selectAll("a[href]", doc) as unknown as Array<{
+    attribs: { href: string };
+  }>;
 
   const ids = new Set<number>();
   for (const a of anchors) {
-    const match = a.attribs.href?.match(/^(?:https?:\/\/news\.ycombinator\.com\/)?item\?id=(\d+)$/);
+    const match = a.attribs.href?.match(
+      /^(?:https?:\/\/news\.ycombinator\.com\/)?item\?id=(\d+)$/,
+    );
     if (match) ids.add(Number(match[1]));
     if (ids.size >= POSTS_PER_DAY) break;
   }
@@ -73,7 +77,9 @@ async function enrichPost(id: number) {
 
   const bottomIds = fetchBottomCommentIds(post.kids, BOTTOM_COMMENTS);
   const bottomRaw = await Promise.all(bottomIds.map(fetchCommentText));
-  const bottomComments = bottomRaw.filter((t): t is string => t !== null).slice(0, BOTTOM_COMMENTS);
+  const bottomComments = bottomRaw
+    .filter((t): t is string => t !== null)
+    .slice(0, BOTTOM_COMMENTS);
 
   return { ...post, articleText, topComments, bottomComments };
 }
@@ -82,7 +88,12 @@ async function enrichPost(id: number) {
 
 export interface DayResult {
   date: string;
-  posts: Array<{ id: number; title: string; domain: string | null; relevance: number }>;
+  posts: Array<{
+    id: number;
+    title: string;
+    domain: string | null;
+    relevance: number;
+  }>;
 }
 
 const results: DayResult[] = [];
@@ -104,12 +115,20 @@ for (let daysAgo = DAYS_BACK; daysAgo >= 1; daysAgo--) {
 
   for (const id of ids) {
     const post = await enrichPost(id);
-    if (!post) { console.log(`  [${id}] skipped (deleted/dead)`); continue; }
+    if (!post) {
+      console.log(`  [${id}] skipped (deleted/dead)`);
+      continue;
+    }
 
     const { relevance } = await LlmClassifier.classify(post);
     console.log(`  [${id}] ${relevance.toFixed(2)} ${post.title}`);
 
-    dayPosts.push({ id: post.id, title: post.title, domain: post.domain, relevance });
+    dayPosts.push({
+      id: post.id,
+      title: post.title,
+      domain: post.domain,
+      relevance,
+    });
   }
 
   results.push({ date, posts: dayPosts });

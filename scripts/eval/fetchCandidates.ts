@@ -8,7 +8,13 @@
 import { writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { fetchTopIds, fetchPost, fetchCommentText, fetchBottomCommentIds, fetchArticleText } from "./hnApi.js";
+import {
+  fetchTopIds,
+  fetchPost,
+  fetchCommentText,
+  fetchBottomCommentIds,
+  fetchArticleText,
+} from "./hnApi.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const TOP_POSTS = 100;
@@ -49,8 +55,9 @@ const toCandidate = async (id: number): Promise<Candidate | null> => {
 const ids = await fetchTopIds(TOP_POSTS);
 console.log(`Fetching ${ids.length} posts...`);
 
-const candidates = (await Promise.all(ids.map(toCandidate)))
-  .filter((c): c is Candidate => c !== null);
+const candidates = (await Promise.all(ids.map(toCandidate))).filter(
+  (c): c is Candidate => c !== null,
+);
 
 const out = join(__dirname, "candidates.json");
 writeFileSync(out, JSON.stringify(candidates, null, 2));

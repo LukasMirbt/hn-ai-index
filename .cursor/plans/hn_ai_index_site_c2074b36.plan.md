@@ -100,11 +100,13 @@ hn-ai-index/
 ## GitHub Actions Workflows
 
 **`fetch.yml`** (data cron):
+
 - Trigger: `schedule: cron '0 */6 * * *'` + `workflow_dispatch`
 - Steps: checkout → install → `npx tsx scripts/fetch-and-classify.ts` → commit + push `data/snapshots.json`
 - The push triggers `deploy.yml` automatically
 
 **`deploy.yml`** (static site):
+
 - Trigger: push to `main`
 - Steps: checkout → install → `vite build` → `actions/upload-pages-artifact` → `actions/deploy-pages`
 - Requires GitHub Pages source set to "GitHub Actions" in repo settings
@@ -112,6 +114,7 @@ hn-ai-index/
 ## Website Pages
 
 Single page (`/`) with:
+
 1. **Hero stat** — current AI index percentage (latest snapshot)
 2. **Line chart** — AI index % over time (all snapshots)
 3. **Bar chart** — raw AI post count vs total posts per snapshot

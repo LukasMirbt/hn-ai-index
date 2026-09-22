@@ -45,7 +45,7 @@ flowchart LR
 ## Files to Create/Change
 
 - **`scripts/eval/LlmClassifier.ts`** (new) — implements the `Classifier` interface from `classifier.ts`, calls `http://localhost:11434/api/generate` with `qwen2.5:7b`
-  - Prompt focuses on *subject matter* relevance only: "Does the subject matter of this post relate to AI/ML? Ignore the tone of the discussion."
+  - Prompt focuses on _subject matter_ relevance only: "Does the subject matter of this post relate to AI/ML? Ignore the tone of the discussion."
   - Registered in `runEval.ts` alongside `KeywordClassifier` so MAE/RMSE can be compared directly against labeled test cases
   - Iterated until relevance MAE beats or matches `KeywordClassifier` on `testCases.json`
 

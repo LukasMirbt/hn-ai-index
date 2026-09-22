@@ -16,10 +16,7 @@ import type { Candidate } from "./fetchCandidates.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ── Register classifiers here ──────────────────────────────────────────────
-const classifiers = [
-  KeywordClassifier,
-  LlmClassifier,
-];
+const classifiers = [KeywordClassifier, LlmClassifier];
 
 // ── Resolve data file ──────────────────────────────────────────────────────
 const fileArg = process.argv.indexOf("--file");
@@ -37,28 +34,34 @@ if (labeled.length === 0) {
 console.log(`\nData file  : ${fileName}`);
 console.log(`Labeled    : ${labeled.length}\n`);
 
-const fmt   = (n: number) => n.toFixed(3);
-const fmtS  = (n: number) => (n >= 0 ? "+" : "") + n.toFixed(3);
-const mae   = (errors: number[]) => errors.reduce((s, e) => s + Math.abs(e), 0) / errors.length;
-const rmse  = (errors: number[]) => Math.sqrt(errors.reduce((s, e) => s + e ** 2, 0) / errors.length);
+const fmt = (n: number) => n.toFixed(3);
+const fmtS = (n: number) => (n >= 0 ? "+" : "") + n.toFixed(3);
+const mae = (errors: number[]) =>
+  errors.reduce((s, e) => s + Math.abs(e), 0) / errors.length;
+const rmse = (errors: number[]) =>
+  Math.sqrt(errors.reduce((s, e) => s + e ** 2, 0) / errors.length);
 
 // ── Run each classifier ────────────────────────────────────────────────────
 for (const classifier of classifiers) {
-  const results = await Promise.all(labeled.map(async (c) => {
-    const pred = await classifier.classify(c);
-    const label = c.label as { relevance: number };
-    return {
-      candidate: c,
-      label,
-      pred,
-      relevanceError: pred.relevance - label.relevance,
-    };
-  }));
+  const results = await Promise.all(
+    labeled.map(async (c) => {
+      const pred = await classifier.classify(c);
+      const label = c.label as { relevance: number };
+      return {
+        candidate: c,
+        label,
+        pred,
+        relevanceError: pred.relevance - label.relevance,
+      };
+    }),
+  );
 
   const relErrors = results.map((r) => r.relevanceError);
 
   console.log(`Classifier : ${classifier.name}`);
-  console.log(`  Relevance  — MAE: ${fmt(mae(relErrors))}  RMSE: ${fmt(rmse(relErrors))}\n`);
+  console.log(
+    `  Relevance  — MAE: ${fmt(mae(relErrors))}  RMSE: ${fmt(rmse(relErrors))}\n`,
+  );
 
   const worst = [...results]
     .sort((a, b) => Math.abs(b.relevanceError) - Math.abs(a.relevanceError))
@@ -68,7 +71,7 @@ for (const classifier of classifiers) {
   worst.forEach((r) => {
     console.log(
       `    ${fmtS(r.relevanceError)} [label=${fmt(r.label.relevance)} pred=${fmt(r.pred.relevance)}]` +
-      ` (${r.pred.reason}) ${r.candidate.title}`
+        ` (${r.pred.reason}) ${r.candidate.title}`,
     );
   });
 

@@ -24,7 +24,7 @@ export interface Post {
 }
 
 export interface Classification {
-  relevance: number;  // 0.0–1.0
+  relevance: number; // 0.0–1.0
   reason: string;
 }
 

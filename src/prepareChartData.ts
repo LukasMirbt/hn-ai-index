@@ -15,14 +15,17 @@ export interface DayResult {
 export function prepareChartData(data: DayResult[]): ChartPoint[] {
   return data.map((day) => {
     const scores = day.posts.map((p) => p.relevance);
-    const mean = scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
+    const mean =
+      scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
     const aiPosts = day.posts.filter((p) => p.relevance >= 0.5);
     return {
       date: day.date,
       meanRelevance: parseFloat(mean.toFixed(3)),
       aiPostCount: aiPosts.length,
       totalPosts: day.posts.length,
-      topAiPosts: [...aiPosts].sort((a, b) => b.relevance - a.relevance).slice(0, 5),
+      topAiPosts: [...aiPosts]
+        .sort((a, b) => b.relevance - a.relevance)
+        .slice(0, 5),
     };
   });
 }

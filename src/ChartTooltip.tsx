@@ -27,7 +27,8 @@ export default function ChartTooltip({ active, payload, label }: Props) {
     <div className="tooltip">
       <p className="tooltip-date">{label}</p>
       <p className="tooltip-summary">
-        Mean relevance: {d.meanRelevance.toFixed(2)} · {d.aiPostCount}/{d.totalPosts} AI posts
+        Mean relevance: {d.meanRelevance.toFixed(2)} · {d.aiPostCount}/
+        {d.totalPosts} AI posts
       </p>
       {d.topAiPosts.length > 0 && (
         <ul className="tooltip-posts">

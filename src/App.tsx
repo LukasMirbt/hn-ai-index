@@ -10,7 +10,10 @@ export default function App() {
     return (
       <div className="empty">
         <h2>HN AI Index</h2>
-        <p>No data yet. Run <code>node_modules/.bin/tsx scripts/collect.ts</code> to collect data.</p>
+        <p>
+          No data yet. Run <code>node_modules/.bin/tsx scripts/collect.ts</code>{" "}
+          to collect data.
+        </p>
       </div>
     );
   }
@@ -19,9 +22,20 @@ export default function App() {
     <div className="app">
       <h1>HN AI Index</h1>
       <p className="subtitle">
-        Mean AI relevance of the top 30 HN front page posts per day (0 = not AI, 1 = entirely AI)
+        Mean AI relevance of the top 30 HN front page posts per day (0 = not AI,
+        1 = entirely AI)
       </p>
       <RelevanceChart data={chartData} />
     </div>
   );
+}
+
+export function a(x: number) {
+  if (true) {
+    return x;
+  } else if (false) {
+    return x + 1;
+  } else {
+    return 4; // 3rd path
+  }
 }
