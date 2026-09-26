@@ -1,87 +1,22 @@
-import { Readability } from "@mozilla/readability";
-import { JSDOM } from "jsdom";
+import type { HnPost } from "./hn/domain/hnPost.js";
+import { fetchTopIds as fetchTopIdsUseCase } from "./hn/application/fetchTopIds.js";
+import { fetchCommentText as fetchCommentTextUseCase } from "./hn/application/fetchCommentText.js";
+import { fetchArticleText as fetchArticleTextUseCase } from "./hn/application/fetchArticleText.js";
+import { firebaseHnGateway } from "./hn/infrastructure/firebaseHnGateway.js";
+import { httpArticleGateway } from "./hn/infrastructure/httpArticleGateway.js";
+import { readabilityArticleExtractor } from "./hn/infrastructure/readabilityArticleExtractor.js";
 
-const BASE = "https://hacker-news.firebaseio.com/v0";
+export type { HnPost };
+export { selectBottomCommentIds as fetchBottomCommentIds } from "./hn/domain/bottomCommentIds.js";
 
-interface HnItem {
-  id: number;
-  title?: string;
-  url?: string;
-  text?: string;
-  kids?: number[];
-  deleted?: boolean;
-  dead?: boolean;
-}
+export const fetchTopIds = (count: number): Promise<number[]> =>
+  fetchTopIdsUseCase(firebaseHnGateway, count);
 
-const get = (url: string) => fetch(url).then((r) => r.json());
+export const fetchPost = (id: number): Promise<HnPost | null> =>
+  firebaseHnGateway.fetchPost(id);
 
-const stripHtml = (html: string) =>
-  html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&\w+;/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+export const fetchCommentText = (id: number): Promise<string | null> =>
+  fetchCommentTextUseCase(firebaseHnGateway, id);
 
-const domain = (url?: string) => {
-  try {
-    return url ? new URL(url).hostname.replace(/^www\./, "") : null;
-  } catch {
-    return null;
-  }
-};
-
-export const fetchTopIds = (n: number): Promise<number[]> =>
-  get(`${BASE}/topstories.json`).then((ids: unknown) =>
-    (ids as number[]).slice(0, n),
-  );
-
-export const fetchItem = (id: number): Promise<HnItem | null> =>
-  get(`${BASE}/item/${id}.json`)
-    .then((item: unknown) => {
-      if (!item || typeof item !== "object" || "error" in item) return null;
-      const i = item as HnItem;
-      return i?.deleted || i?.dead ? null : i;
-    })
-    .catch(() => null);
-
-export const fetchCommentText = async (id: number): Promise<string | null> => {
-  const item = await fetchItem(id);
-  return item?.text ? stripHtml(item.text) : null;
-};
-
-export const fetchBottomCommentIds = (
-  kids: number[],
-  n: number,
-  fetchWindow = 20,
-): number[] => kids.slice(-Math.max(n, fetchWindow)).reverse();
-
-export const fetchArticleText = async (url: string): Promise<string | null> => {
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "Mozilla/5.0 (compatible; hn-ai-index/1.0)" },
-      signal: AbortSignal.timeout(8000),
-    });
-    if (!res.ok) return null;
-    const html = await res.text();
-    const dom = new JSDOM(html, { url });
-    const article = new Readability(dom.window.document).parse();
-    return (
-      article?.textContent?.replace(/\s+/g, " ").trim().slice(0, 1500) ?? null
-    );
-  } catch {
-    return null;
-  }
-};
-
-export const fetchPost = async (id: number) => {
-  const item = await fetchItem(id);
-  if (!item?.title) return null;
-  return {
-    id: item.id,
-    title: item.title,
-    url: item.url ?? null,
-    domain: domain(item.url),
-    text: item.text ? stripHtml(item.text) : null,
-    kids: item.kids ?? [],
-  };
-};
+export const fetchArticleText = (url: string): Promise<string | null> =>
+  fetchArticleTextUseCase(httpArticleGateway, readabilityArticleExtractor, url);
