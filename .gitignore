@@ -17,8 +17,6 @@ coverage
 scripts/eval/candidates.json
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo

@@ -1,5 +1,8 @@
 import { z } from "zod";
 import { idSchema } from "./idSchema.ts";
+import type { Story } from "./storySchema.ts";
+
+/* type Item = Job | Story | Comment | Poll | Pollopt; */
 
 export const itemSchema = z.object({
   id: idSchema,
