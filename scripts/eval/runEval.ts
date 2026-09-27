@@ -9,14 +9,13 @@
 import { readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { KeywordClassifier } from "./keywordClassifier.js";
-import { LlmClassifier } from "./LlmClassifier.js";
+import { LlmClassifier } from "./llmClassifier.ts";
 import type { Candidate } from "./fetchCandidates.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ── Register classifiers here ──────────────────────────────────────────────
-const classifiers = [KeywordClassifier, LlmClassifier];
+const classifiers = [LlmClassifier];
 
 // ── Resolve data file ──────────────────────────────────────────────────────
 const fileArg = process.argv.indexOf("--file");

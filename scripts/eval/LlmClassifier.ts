@@ -5,7 +5,7 @@
  * Requires Ollama to be running: `ollama serve`
  * Model must be pulled: `ollama pull qwen2.5:7b`
  */
-import type { Post, Classification } from "./classifier.js";
+import type { Post, Classification } from "./classifier.ts";
 
 const OLLAMA_URL = "http://localhost:11434/api/generate";
 const MODEL = "qwen2.5:7b";

@@ -16,7 +16,7 @@ import {
   fetchBottomCommentIds,
   fetchArticleText,
 } from "./eval/hnApi.js";
-import { LlmClassifier } from "./eval/LlmClassifier.js";
+import { LlmClassifier } from "./eval/llmClassifier.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
