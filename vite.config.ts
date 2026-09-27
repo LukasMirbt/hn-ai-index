@@ -5,6 +5,7 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   plugins: [react()],
   test: {
+    mockReset: true,
     coverage: {
       provider: "v8",
       reporter: ["text", "html"],

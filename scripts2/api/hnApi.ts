@@ -1,6 +1,8 @@
 import { commentSchema, type Comment } from "./models/commentSchema.ts";
 import { itemSchema, type Item } from "./models/itemSchema.ts";
 import { jobSchema, type Job } from "./models/jobSchema.ts";
+import { polloptSchema, type Pollopt } from "./models/polloptSchema.ts";
+import { pollSchema, type Poll } from "./models/pollSchema.ts";
 import { storySchema, type Story } from "./models/storySchema.ts";
 
 export const baseUrl = "https://hacker-news.firebaseio.com/v0";
@@ -31,4 +33,18 @@ export async function fetchJob(id: number): Promise<Job> {
   const json = await response.json();
   const job = jobSchema.parse(json);
   return job;
+}
+
+export async function fetchPoll(id: number): Promise<Poll> {
+  const response = await fetch(`${baseUrl}/item/${id}.json`);
+  const json = await response.json();
+  const poll = pollSchema.parse(json);
+  return poll;
+}
+
+export async function fetchPollopt(id: number): Promise<Pollopt> {
+  const response = await fetch(`${baseUrl}/item/${id}.json`);
+  const json = await response.json();
+  const pollopt = polloptSchema.parse(json);
+  return pollopt;
 }

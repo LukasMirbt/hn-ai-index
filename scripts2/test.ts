@@ -1,4 +1,4 @@
-import { fetchJob } from "./api/hnClient.ts";
+import { fetchPollopt } from "./api/hnApi.ts";
 
-const job = await fetchJob(49524704);
+const job = await fetchPollopt(160705);
 console.log(job);

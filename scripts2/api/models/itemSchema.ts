@@ -1,25 +1,16 @@
 import { z } from "zod";
-import { idSchema } from "./idSchema.ts";
-import type { Story } from "./storySchema.ts";
+import { storySchema } from "./storySchema.ts";
+import { jobSchema } from "./jobSchema.ts";
+import { pollSchema } from "./pollSchema.ts";
+import { polloptSchema } from "./polloptSchema.ts";
+import { commentSchema } from "./commentSchema.ts";
 
-/* type Item = Job | Story | Comment | Poll | Pollopt; */
-
-export const itemSchema = z.object({
-  id: idSchema,
-  deleted: z.boolean().optional(),
-  type: z.enum(["job", "story", "comment", "poll", "pollopt"]).optional(),
-  by: z.string().optional(),
-  time: z.int().positive().optional(),
-  text: z.string().optional(),
-  dead: z.boolean().optional(),
-  parent: idSchema.optional(),
-  poll: idSchema.optional(),
-  kids: z.array(idSchema).optional(),
-  url: z.string().optional(),
-  score: z.int().optional(),
-  title: z.string().optional(),
-  parts: z.array(idSchema).optional(),
-  descendants: z.int().optional(),
-});
+export const itemSchema = z.union([
+  jobSchema,
+  storySchema,
+  commentSchema,
+  pollSchema,
+  polloptSchema,
+]);
 
 export type Item = z.infer<typeof itemSchema>;
