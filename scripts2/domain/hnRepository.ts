@@ -20,7 +20,7 @@ export async function fetchComment(id: number) {
 export async function fetchCommentList(
   ids: number[],
 ): Promise<Comment[] | null> {
-  const promises = ids.map((id) => fetchComment(id));
+  const promises = ids.map((id) => api.fetchComment(id));
   const apiComments = await Promise.all(promises);
   const comments = apiComments.map((item) => CommentModel.from(item));
   return comments;
