@@ -1,11 +1,22 @@
 import * as api from "../../api/hnApi.ts";
+import * as DateModel from "./date.ts";
 
 export type Comment = {
-  test: string;
+  by: string;
+  id: number;
+  kids: number[];
+  parent: number;
+  text: string;
+  time: Date;
 };
 
 export function from(item: api.Comment): Comment {
   return {
-    test: "",
+    by: item.by,
+    id: item.id,
+    kids: item.kids ?? [],
+    parent: item.parent,
+    text: item.text,
+    time: DateModel.fromUnixTimestamp(item.time),
   };
 }
