@@ -5,6 +5,9 @@ import { polloptSchema, type Pollopt } from "./models/polloptSchema.ts";
 import { pollSchema, type Poll } from "./models/pollSchema.ts";
 import { storySchema, type Story } from "./models/storySchema.ts";
 
+export * from "./models/commentSchema.ts";
+export * from "./models/storySchema.ts";
+
 export const baseUrl = "https://hacker-news.firebaseio.com/v0";
 
 export async function fetchItem(id: number): Promise<Item> {
