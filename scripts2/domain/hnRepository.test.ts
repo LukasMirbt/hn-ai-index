@@ -65,48 +65,44 @@ describe("hnRepository", () => {
     const mockApiFetchComment = vi.mocked(api.fetchComment);
     const mockCommentFrom = vi.mocked(CommentModel.from);
 
-    it("fetches and returns comment list", async () => {
-      let firstResolve;
-      let secondResolve;
+    const flush = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
 
-      const firstPromise = new Promise<api.Comment>((resolve) => {
-        firstResolve = resolve;
-        return firstApiComment;
-      });
-      const secondPromise = new Promise<api.Comment>((resolve) => {
-        secondResolve = resolve;
-        return secondApiComment;
-      });
+    it("fetches and returns comment list", async () => {
+      const firstCall = Promise.withResolvers<api.Comment>();
+      const secondCall = Promise.withResolvers<api.Comment>();
 
       mockApiFetchComment
-        .mockReturnValueOnce(firstPromise)
-        .mockReturnValueOnce(secondPromise);
+        .mockReturnValueOnce(firstCall.promise)
+        .mockReturnValueOnce(secondCall.promise);
 
       mockCommentFrom
         .mockReturnValueOnce(firstComment)
         .mockReturnValueOnce(secondComment);
 
-      let result: Comment[] | null = null;
+      let settled = false;
 
-      fetchCommentList(ids).then((comments) => {
-        result = comments;
+      const resultPromise = fetchCommentList(ids).finally(() => {
+        settled = true;
       });
 
-      firstResolve!();
+      expect(mockApiFetchComment).toHaveBeenNthCalledWith(1, ids[0]);
+      expect(mockApiFetchComment).toHaveBeenNthCalledWith(2, ids[1]);
 
-      expect(result).toBeNull();
+      secondCall.resolve(secondApiComment);
+      await flush();
+      expect(settled).toBe(false);
 
-      secondResolve!();
+      firstCall.resolve(firstApiComment);
+      await flush();
+      expect(settled).toBe(true);
 
-      await new Promise<void>((resolve) => {
-        setTimeout(() => {
-          resolve();
-        }, 0);
-      });
+      await expect(resultPromise).resolves.toEqual([
+        firstComment,
+        secondComment,
+      ]);
 
-      const expected = [firstComment, secondComment];
-
-      expect(result).toEqual(expected);
+      expect(mockCommentFrom).toHaveBeenNthCalledWith(1, firstApiComment);
+      expect(mockCommentFrom).toHaveBeenNthCalledWith(2, secondApiComment);
     });
   });
 });

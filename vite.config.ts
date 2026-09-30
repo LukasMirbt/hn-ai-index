@@ -9,7 +9,11 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "html"],
-      include: ["src/**/*.{ts,tsx}", "scripts/**/*.{ts,tsx}"],
+      include: [
+        "src/**/*.{ts,tsx}",
+        "scripts/**/*.{ts,tsx}",
+        "scripts2/**/*.{ts,tsx}",
+      ],
       exclude: ["**/*.test.{ts,tsx}", "**/*.spec.{ts,tsx}"],
       thresholds: {
         statements: 100,
