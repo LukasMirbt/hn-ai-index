@@ -18,6 +18,7 @@ describe("storySchema", () => {
     8901, 8902, 8907, 8894, 8878, 8870, 8980, 8934, 8876,
   ];
 
+  const text = "text";
   const url = "http://www.getdropbox.com/u/2/screencast.html";
 
   it("rejects invalid json", () => {
@@ -26,7 +27,7 @@ describe("storySchema", () => {
     expect(result.success).toBe(false);
   });
 
-  it("accepts story without kids and url", () => {
+  it("accepts story without kids, text and url", () => {
     const story = baseStory;
     const result = storySchema.safeParse(story);
     expect(result.success).toBe(true);
@@ -36,6 +37,15 @@ describe("storySchema", () => {
     const story: Story = {
       ...baseStory,
       kids,
+    };
+    const result = storySchema.safeParse(story);
+    expect(result.success).toBe(true);
+  });
+
+  it("accepts story with text", () => {
+    const story: Story = {
+      ...baseStory,
+      text,
     };
     const result = storySchema.safeParse(story);
     expect(result.success).toBe(true);

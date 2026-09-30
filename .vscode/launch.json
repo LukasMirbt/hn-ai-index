@@ -7,9 +7,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run test.ts",
+      "name": "Run classifier.ts",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/scripts2/test.ts"
+      "program": "${workspaceFolder}/scripts2/classifier.ts"
     }
   ]
 }

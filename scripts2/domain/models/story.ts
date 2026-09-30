@@ -7,6 +7,7 @@ export type Story = {
   id: number;
   kids: number[];
   score: number;
+  text?: string;
   time: Date;
   title: string;
   url?: string;
@@ -19,6 +20,7 @@ export function from(item: api.Story): Story {
     id: item.id,
     kids: item.kids ?? [],
     score: item.score,
+    text: item.text,
     time: DateModel.fromUnixTimestamp(item.time),
     title: item.title,
     url: item.url,

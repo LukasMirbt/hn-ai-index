@@ -1,8 +1,4 @@
-import {
-  fetchBottomFiveComments,
-  fetchStory,
-  fetchTopFiveComments,
-} from "./domain/hnRepository.ts";
 import { fetchArticleData } from "./feature/data.ts";
 
-const data = fetchArticleData(49854219);
+const result = await fetchArticleData(49911995);
+console.log(result);

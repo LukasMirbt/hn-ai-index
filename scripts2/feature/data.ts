@@ -10,7 +10,7 @@ console.log("top five comments", topFiveComments);
 const bottomFiveComments = await fetchBottomFiveComments(story); */
 
 export async function fetchArticleData(id: number): ArticleData {
-  const urlContent = await fetchUrlContent(id);
+  /*   const urlContent = await fetchUrlContent(id); */
 
   const story = await fetchStory(id);
   const topFiveCommentIds = StoryModel.topFiveCommentIds(story);
@@ -20,7 +20,7 @@ export async function fetchArticleData(id: number): ArticleData {
   const bottomFiveComments = await fetchCommentList(bottomFiveCommentIds);
 
   return {
-    urlContent,
+    urlContent: "",
     topFiveComments,
     bottomFiveComments,
   };

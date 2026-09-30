@@ -7,6 +7,7 @@ export const storySchema = z.object({
   id: idSchema,
   kids: z.array(idSchema).optional(),
   score: z.int(),
+  text: z.string().optional(),
   time: z.int().positive(),
   title: z.string(),
   type: z.literal("story"),
