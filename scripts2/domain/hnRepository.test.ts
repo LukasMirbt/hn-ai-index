@@ -1,6 +1,6 @@
 import { vi, describe, it, expect } from "vitest";
 import { fetchStory, fetchComment, fetchCommentList } from "./hnRepository.ts";
-import * as api from "../api/hnApi.ts";
+import * as api from "../firebaseApi/firebaseApi.ts";
 import * as StoryModel from "./models/story.ts";
 import { type Story } from "./models/story.ts";
 import * as CommentModel from "./models/comment.ts";

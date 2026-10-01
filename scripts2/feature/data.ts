@@ -1,6 +1,9 @@
-import { fetchStory } from "../api/hnApi.ts";
-import { fetchCommentList } from "../domain/hnRepository.ts";
-import * as StoryModel from "../domain/hnRepository.ts";
+import {
+  fetchStory,
+  fetchCommentList,
+  type Comment,
+} from "../domain/hnRepository.ts";
+import { StoryModel } from "../domain/hnRepository.ts";
 
 /* const story = await fetchStory(49854219);
 
@@ -9,7 +12,12 @@ console.log("top five comments", topFiveComments);
 
 const bottomFiveComments = await fetchBottomFiveComments(story); */
 
-export async function fetchArticleData(id: number): ArticleData {
+type ArticleData = {
+  topFiveComments: Comment[];
+  bottomFiveComments: Comment[];
+};
+
+export async function fetchArticleData(id: number): Promise<ArticleData> {
   /*   const urlContent = await fetchUrlContent(id); */
 
   const story = await fetchStory(id);

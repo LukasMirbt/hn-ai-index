@@ -1,4 +1,4 @@
-import * as api from "../../api/hnApi.ts";
+import * as api from "../../firebaseApi/firebaseApi.ts";
 import * as DateModel from "./date.ts";
 
 export type Story = {

@@ -1,5 +1,5 @@
 import { vi, describe, it, expect } from "vitest";
-import * as api from "../../api/hnApi.ts";
+import * as api from "../../firebaseApi/firebaseApi.ts";
 import * as CommentModel from "./comment.ts";
 import { type Comment } from "./comment.ts";
 import * as DateModel from "./date.ts";

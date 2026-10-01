@@ -7,7 +7,7 @@ import {
   fetchPoll,
   fetchPollopt,
   fetchStory,
-} from "./hnApi.ts";
+} from "./firebaseApi.ts";
 import { beforeEach } from "vitest";
 import { itemSchema, type Item } from "./models/itemSchema.ts";
 import { storySchema, type Story } from "./models/storySchema.ts";
@@ -52,7 +52,7 @@ vi.mock("./models/polloptSchema.ts", () => ({
   },
 }));
 
-describe("hnApi", () => {
+describe("hnFirebaseApi", () => {
   const id = 1;
   const itemUrl = `${baseUrl}/item/${id}.json`;
   const json = {};
