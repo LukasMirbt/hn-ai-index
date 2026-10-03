@@ -18,6 +18,12 @@ export async function fetchFrontPage({
   return data;
 }
 
+export async function fetchItem(id: number): Promise<string> {
+  const response = await fetch(`${baseUrl}/item?id=${id}`);
+  const html = await response.text();
+  return html;
+}
+
 export async function fetchArticle(url: string): Promise<ArticleData> {
   const response = await fetch(url);
   const html = await response.text();

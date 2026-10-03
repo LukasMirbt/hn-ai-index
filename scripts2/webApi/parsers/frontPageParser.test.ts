@@ -2,15 +2,15 @@ import selectAll from "css-select";
 import { isTag, type ChildNode, type Document } from "domhandler";
 import { parseDocument } from "htmlparser2";
 import { vi, describe, it, expect } from "vitest";
-import * as ItemParser from "./itemParser.ts";
-import { type ItemData } from "./itemParser.ts";
+import * as FrontPageItemParser from "./frontPageItemParser.ts";
+import { type FrontPageItemData } from "./frontPageItemParser.ts";
 import type { FrontPageData } from "./frontPageParser.ts";
 import * as FrontPageParser from "./frontPageParser.ts";
 
 vi.mock("htmlparser2");
 vi.mock("css-select");
 vi.mock("domhandler");
-vi.mock("./itemParser.ts");
+vi.mock("./frontPageItemParser.ts");
 
 describe("frontPageParser", () => {
   describe("parse", () => {
@@ -18,7 +18,7 @@ describe("frontPageParser", () => {
       const mockParseDocument = vi.mocked(parseDocument);
       const mockSelectAll = vi.mocked(selectAll);
       const mockIsTag = vi.mocked(isTag);
-      const mockItemParserParse = vi.mocked(ItemParser.parse);
+      const mockFrontPageItemParserParse = vi.mocked(FrontPageItemParser.parse);
 
       const html = "html";
 
@@ -30,12 +30,12 @@ describe("frontPageParser", () => {
       const document = { children } as Document;
 
       const nodes = [secondNode, thirdNode];
-      const item = { id: "id" } as ItemData;
+      const item = { id: "id" } as FrontPageItemData;
 
       mockParseDocument.mockReturnValue(document);
       mockSelectAll.mockReturnValue(nodes);
       mockIsTag.mockReturnValueOnce(false).mockReturnValue(true);
-      mockItemParserParse.mockReturnValue(item);
+      mockFrontPageItemParserParse.mockReturnValue(item);
 
       const result = FrontPageParser.parse(html);
 
@@ -51,7 +51,9 @@ describe("frontPageParser", () => {
         children,
       );
       expect(mockIsTag.mock.calls).toEqual([[secondNode], [thirdNode]]);
-      expect(mockItemParserParse).toHaveBeenCalledExactlyOnceWith(thirdNode);
+      expect(mockFrontPageItemParserParse).toHaveBeenCalledExactlyOnceWith(
+        thirdNode,
+      );
     });
   });
 });

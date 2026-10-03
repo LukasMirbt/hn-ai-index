@@ -1,8 +1,6 @@
-import { fetchFrontPage } from "./domain/hnRepository.ts";
-import { fetchArticleData } from "./feature/data.ts";
-import { fetchArticle } from "./webApi/webApi.ts";
+import { fetchItem } from "./webApi/webApi.ts";
 
-const result = await fetchArticle("https://gadgets.muse.ai/");
+const result = await fetchItem(49932147);
 
 /* const ids = await fetchFrontPage({ date: new Date("2026-10-01") });
 const result = await fetchArticleData(49911995); */
