@@ -81,4 +81,24 @@ describe("story", () => {
       expect(mockDateFromUnixTimestamp).toHaveBeenCalledExactlyOnceWith(time);
     });
   });
+
+  describe("topFiveCommentIds", () => {
+    it("returns correct ids", () => {
+      const kids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      const story = { kids } as Story;
+      const result = StoryModel.topFiveCommentIds(story);
+      const expected = [1, 2, 3, 4, 5];
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe("bottomFiveCommentIds", () => {
+    it("returns correct ids", () => {
+      const kids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      const story = { kids } as Story;
+      const result = StoryModel.bottomFiveCommentIds(story);
+      const expected = [12, 11, 10, 9, 8];
+      expect(result).toEqual(expected);
+    });
+  });
 });

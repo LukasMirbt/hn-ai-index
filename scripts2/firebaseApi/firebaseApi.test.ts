@@ -52,7 +52,7 @@ vi.mock("./models/polloptSchema.ts", () => ({
   },
 }));
 
-describe("hnFirebaseApi", () => {
+describe("firebaseApi", () => {
   const id = 1;
   const itemUrl = `${baseUrl}/item/${id}.json`;
   const json = {};

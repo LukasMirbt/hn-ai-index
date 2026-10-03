@@ -1,7 +1,7 @@
 import * as FrontPageParser from "./parsers/frontPageParser.ts";
 import * as DateModel from "./models/date.ts";
 
-const baseUrl = "https://news.ycombinator.com";
+export const baseUrl = "https://news.ycombinator.com";
 
 export async function fetchFrontPage({
   date,
