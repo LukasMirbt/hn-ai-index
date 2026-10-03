@@ -3,13 +3,19 @@ import * as webApi from "../webApi/webApi.ts";
 import * as StoryModel from "./models/story.ts";
 import * as CommentModel from "./models/comment.ts";
 import { type Comment } from "./models/comment.ts";
+import type { FrontPageData } from "../webApi/parsers/frontPageParser.ts";
 
 export * as StoryModel from "./models/story.ts";
 export { type Comment } from "./models/comment.ts";
 export * as CommentModel from "./models/comment.ts";
 
-export async function fetchFrontPage({ date }: { date: Date }) {
+export async function fetchFrontPage({
+  date,
+}: {
+  date: Date;
+}): Promise<FrontPageData> {
   const apiPage = await webApi.fetchFrontPage({ date });
+  return apiPage;
 }
 
 export async function fetchStory(id: number) {

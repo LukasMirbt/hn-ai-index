@@ -6,7 +6,7 @@ import { type Story } from "./models/story.ts";
 import * as CommentModel from "./models/comment.ts";
 import { type Comment } from "./models/comment.ts";
 
-vi.mock("../api/hnApi.ts");
+vi.mock("../firebaseApi/firebaseApi.ts");
 vi.mock("./models/story.ts");
 vi.mock("./models/comment.ts");
 
