@@ -22,6 +22,7 @@ export async function fetchFrontPage({
 
 export async function fetchItem(id: number): Promise<ItemData> {
   const response = await fetch(`${baseUrl}/item?id=${id}`);
+  console.log("status", response.status);
   const html = await response.text();
   const data = ItemParser.parse(html);
   return data;
