@@ -3,6 +3,8 @@ import { type FrontPageData } from "./parsers/frontPageParser.ts";
 import * as DateModel from "./models/date.ts";
 import * as ArticleParser from "./parsers/articleParser.ts";
 import { type ArticleData } from "./parsers/articleParser.ts";
+import * as ItemParser from "./parsers/itemParser.ts";
+import { type ItemData } from "./parsers/itemParser.ts";
 
 export const baseUrl = "https://news.ycombinator.com";
 
@@ -18,10 +20,11 @@ export async function fetchFrontPage({
   return data;
 }
 
-export async function fetchItem(id: number): Promise<string> {
+export async function fetchItem(id: number): Promise<ItemData> {
   const response = await fetch(`${baseUrl}/item?id=${id}`);
   const html = await response.text();
-  return html;
+  const data = ItemParser.parse(html);
+  return data;
 }
 
 export async function fetchArticle(url: string): Promise<ArticleData> {
