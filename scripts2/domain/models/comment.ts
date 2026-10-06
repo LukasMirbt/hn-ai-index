@@ -1,22 +1,24 @@
-import * as api from "../../firebaseApi/firebaseApi.ts";
-import * as DateModel from "./date.ts";
+import type { CommentData } from "../../webApi/parsers/commentParser.ts";
 
 export type Comment = {
-  by: string;
-  id: number;
-  kids: number[];
-  parent: number;
-  text: string;
-  time: Date;
+  id?: number;
+  htmlText?: string;
+  indent?: number;
 };
 
-export function from(item: api.Comment): Comment {
+export function from(item: CommentData): Comment {
   return {
-    by: item.by,
     id: item.id,
-    kids: item.kids ?? [],
-    parent: item.parent,
-    text: item.text,
-    time: DateModel.fromUnixTimestamp(item.time),
+    htmlText: item.htmlText,
+    indent: item.indent,
   };
+}
+
+const slopRegex = /\bslops?\b/i;
+
+export function hasSlop(comment: Comment): boolean {
+  const text = comment.htmlText;
+  if (!text) return false;
+  const hasSlop = slopRegex.test(text);
+  return hasSlop;
 }
