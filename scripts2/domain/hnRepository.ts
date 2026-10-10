@@ -2,9 +2,10 @@ import * as webApi from "../webApi/webApi.ts";
 import { type FrontPage } from "./models/frontPage.ts";
 import * as FrontPageModel from "./models/frontPage.ts";
 
-export * as StoryModel from "./models/story.ts";
 export { type Comment } from "./models/comment.ts";
 export * as CommentModel from "./models/comment.ts";
+export { type CommentList } from "./models/commentList.ts";
+export * as CommentListModel from "./models/commentList.ts";
 
 import * as ItemModel from "./models/item.ts";
 import { type Item } from "./models/item.ts";

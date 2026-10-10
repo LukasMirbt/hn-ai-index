@@ -1,12 +1,15 @@
 import type { ItemData } from "../../webApi/parsers/itemParser.ts";
-import * as CommentModel from "./comment.ts";
+import type { CommentList } from "./commentList.ts";
+import * as CommentListModel from "./commentList.ts";
 import { type Comment } from "./comment.ts";
 
 export type Item = {
-  comments: Comment[];
+  commentList: CommentList;
+  commentsWithSlop: Comment[];
 };
 
 export function from(data: ItemData): Item {
-  const comments = data.comments.map(CommentModel.from);
-  return { comments };
+  const commentList = CommentListModel.from(data);
+  const commentsWithSlop = CommentListModel.getSlop(commentList);
+  return { commentList, commentsWithSlop };
 }
