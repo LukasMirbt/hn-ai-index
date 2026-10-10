@@ -1,4 +1,5 @@
 import * as webApi from "../webApi/webApi.ts";
+import * as localDb from "../localDb/localDb.ts";
 import { type FrontPage } from "./models/frontPage.ts";
 import * as FrontPageModel from "./models/frontPage.ts";
 
@@ -20,4 +21,10 @@ export async function fetchItem(id: number): Promise<Item> {
   const data = await webApi.fetchItem(id);
   const item = ItemModel.from(data);
   return item;
+}
+
+export async function fetchItems(ids: number[]): Promise<Item[]> {
+  const rows = await localDb.fetchStories(ids);
+  const items = rows.map(ItemModel.fromRow);
+  return items;
 }

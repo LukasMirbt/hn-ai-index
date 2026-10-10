@@ -1,4 +1,5 @@
 import type { CommentData } from "../../webApi/parsers/commentParser.ts";
+import type { CommentRow } from "../../localDb/models/commentRowSchema.ts";
 
 export type Comment = {
   id?: number;
@@ -11,6 +12,13 @@ export function from(item: CommentData): Comment {
     id: item.id,
     htmlText: item.htmlText,
     indent: item.indent,
+  };
+}
+
+export function fromRow(row: CommentRow): Comment {
+  return {
+    id: row.id,
+    htmlText: row.htmlText,
   };
 }
 
