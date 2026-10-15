@@ -5,7 +5,9 @@ import * as ItemParser from "./parsers/itemParser.ts";
 import { type ItemData } from "./parsers/itemParser.ts";
 import { client } from "../webClient/client.ts";
 
-export async function fetchFrontPage(date: Date): Promise<FrontPageData> {
+export async function fetchFrontPage(
+  date: Temporal.PlainDate,
+): Promise<FrontPageData> {
   const day = DateModel.toYYYYMMDD(date);
   const response = await client.get(`front?day=${day}`);
   const html = await response.text();

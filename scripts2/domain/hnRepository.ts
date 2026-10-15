@@ -11,7 +11,9 @@ export * as CommentListModel from "./models/commentList.ts";
 import * as ItemModel from "./models/item.ts";
 import { type Item } from "./models/item.ts";
 
-export async function fetchFrontPage(date: Date): Promise<FrontPage> {
+export async function fetchFrontPage(
+  date: Temporal.PlainDate,
+): Promise<FrontPage> {
   const data = await webApi.fetchFrontPage(date);
   const page = FrontPageModel.from(data);
   return page;

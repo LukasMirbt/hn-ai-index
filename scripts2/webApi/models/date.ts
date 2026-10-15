@@ -1,3 +1,3 @@
-export function toYYYYMMDD(date: Date) {
-  return date.toISOString().split("T")[0];
+export function toYYYYMMDD(date: Temporal.PlainDate) {
+  return date.toString().split("T")[0];
 }
