@@ -35,12 +35,31 @@ body {
 }
 
 .tooltip {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 10px 14px;
   max-width: 320px;
   font-size: 13px;
+}
+
+.tooltip-headline {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.tooltip-headline span,
+.tooltip-detail {
+  color: #6b6b6b;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tooltip-detail {
+  margin: 0 0 2px;
 }
 
 .tooltip-date {

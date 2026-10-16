@@ -1,9 +1,9 @@
-import relevanceData from "./data/relevance.json";
-import RelevanceChart from "./RelevanceChart";
-import { prepareChartData } from "./prepareChartData";
-import type { DayResult } from "./prepareChartData";
+import slopData from "./data/slop.json";
+import SlopChart from "./SlopChart";
+import { prepareSlopChartData } from "./prepareSlopChartData";
+import type { SlopResults } from "./prepareSlopChartData";
 
-const chartData = prepareChartData(relevanceData as DayResult[]);
+const chartData = prepareSlopChartData(slopData as SlopResults);
 
 export default function App() {
   if (chartData.length === 0) {
@@ -11,8 +11,9 @@ export default function App() {
       <div className="empty">
         <h2>HN AI Index</h2>
         <p>
-          No data yet. Run <code>node_modules/.bin/tsx scripts/collect.ts</code>{" "}
-          to collect data.
+          No data yet. Run{" "}
+          <code>node_modules/.bin/tsx scripts2/classifier.ts</code> to collect
+          data.
         </p>
       </div>
     );
@@ -22,10 +23,10 @@ export default function App() {
     <div className="app">
       <h1>HN AI Index</h1>
       <p className="subtitle">
-        Mean AI relevance of the top 30 HN front page posts per day (0 = not AI,
-        1 = entirely AI)
+        Share of the top 30 HN front page stories per day with at least one
+        comment mentioning "slop"
       </p>
-      <RelevanceChart data={chartData} />
+      <SlopChart data={chartData} />
     </div>
   );
 }

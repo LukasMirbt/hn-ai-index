@@ -26,7 +26,7 @@ export async function fetchItem(id: number): Promise<Item> {
 }
 
 export async function fetchItems(ids: number[]): Promise<Item[]> {
-  const rows = await localDb.fetchStories(ids);
+  const rows = await Promise.all(ids.map((id) => localDb.readStory2(id)));
   const items = rows.map(ItemModel.fromRow);
   return items;
 }
