@@ -1,9 +1,11 @@
-import { calculateSlopLocal } from "./feature/calculateSlop.ts";
+import {
+  fetchFrontPage,
+  fetchItem,
+  fetchItems,
+} from "../domain/hnRepository.ts";
 import * as fs from "node:fs";
 
-await saveSlopForYear(2025);
-
-async function saveSlopForYear(year: number): Promise<void> {
+export async function saveSlopForYear(year: number): Promise<void> {
   const startDate = new Temporal.PlainDate(year, 3, 1);
 
   for (
@@ -46,18 +48,4 @@ async function getSlopForMonth({
   }
 
   return results;
-}
-
-function saveMonthResults(monthResults: Record<string, number[]>): void {
-  const data = fs.readFileSync("./src/data/slop.json", "utf8");
-  const existingResults = JSON.parse(data) as Record<string, number[]>;
-
-  const mergedResults = {
-    ...monthResults,
-    ...existingResults,
-  };
-
-  const mergedJson = JSON.stringify(mergedResults);
-
-  fs.writeFileSync("./src/data/slop.json", mergedJson);
 }

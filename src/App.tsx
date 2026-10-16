@@ -11,9 +11,8 @@ export default function App() {
       <div className="empty">
         <h2>HN AI Index</h2>
         <p>
-          No data yet. Run{" "}
-          <code>node_modules/.bin/tsx scripts2/classifier.ts</code> to collect
-          data.
+          No data yet. Run <code>node_modules/.bin/tsx scripts/main.ts</code> to
+          collect data.
         </p>
       </div>
     );
