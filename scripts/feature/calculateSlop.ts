@@ -4,6 +4,7 @@ import {
   fetchItems,
 } from "../domain/hnRepository.ts";
 import * as fs from "node:fs";
+import { calculateSlopLocal } from "./slopLocal/slopLocal.ts";
 
 export async function saveSlopForYear(year: number): Promise<void> {
   const startDate = new Temporal.PlainDate(year, 3, 1);
@@ -17,7 +18,7 @@ export async function saveSlopForYear(year: number): Promise<void> {
       year: startDate.year,
       month: date.month,
     });
-    saveMonthResults(results);
+    // saveMonthResults(results);
   }
 }
 

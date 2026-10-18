@@ -1,5 +1,5 @@
 import path from "node:path";
-import { client } from "../localDbClient/client.ts";
+import { connection } from "../localDbClient/client.ts";
 import { storyRowSchema, type StoryRow } from "./models/storyRowSchema.ts";
 
 export * from "./models/commentRowSchema.ts";
@@ -11,7 +11,7 @@ export const dataGlob = path.resolve(
 );
 
 export async function readStory(id: number): Promise<StoryRow> {
-  const reader = await client.runAndReadAll(`
+  const reader = await connection.runAndReadAll(`
     SELECT id, parent, text, deleted, dead, kids
     FROM read_parquet('${dataGlob}')
     WHERE id = ${id}
@@ -31,7 +31,7 @@ export async function readStory(id: number): Promise<StoryRow> {
   const comments: StoryRow["comments"] = [];
 
   async function collectKidsCommentsRecursively(kids: number[]) {
-    const reader = await client.runAndReadAll(`
+    const reader = await connection.runAndReadAll(`
     SELECT id, parent, text, deleted, dead, kids
     FROM read_parquet('${dataGlob}')
     WHERE id IN (${kids.join(",")})
@@ -83,7 +83,7 @@ let itemsLoaded: Promise<unknown> | undefined;
 function loadItems(): Promise<unknown> {
   itemsLoaded ??= (async () => {
     const start = performance.now();
-    await client.run(`
+    await connection.run(`
       CREATE TABLE items AS
       SELECT id, text, deleted, dead, kids
       FROM read_parquet('${dataGlob}')
@@ -100,7 +100,7 @@ function loadItems(): Promise<unknown> {
 async function readItems(ids: number[]): Promise<ItemRow[]> {
   if (ids.length === 0) return [];
 
-  const reader = await client.runAndReadAll(`
+  const reader = await connection.runAndReadAll(`
     SELECT id, text, deleted, dead, kids
     FROM items
     WHERE id IN (${ids.join(", ")})
@@ -195,7 +195,7 @@ export async function fetchStories(storyIds: number[]): Promise<StoryRow[]> {
 // Two queries with literal id lists, because DuckDB only pushes literal filters
 // down into the Parquet scan, not `IN (subquery)`.
 async function readChildren(parentIds: number[]): Promise<ChildRow[]> {
-  const idResult = await client.runAndReadAll(`
+  const idResult = await connection.runAndReadAll(`
     SELECT DISTINCT id
     FROM read_parquet('${dataGlob}')
     WHERE parent IN (${parentIds.join(", ")})
@@ -204,7 +204,7 @@ async function readChildren(parentIds: number[]): Promise<ChildRow[]> {
 
   if (childIds.length === 0) return [];
 
-  const result = await client.runAndReadAll(`
+  const result = await connection.runAndReadAll(`
     SELECT id, parent, deleted, dead
     FROM read_parquet('${dataGlob}')
     WHERE id IN (${childIds.join(", ")})
@@ -217,7 +217,7 @@ async function readChildren(parentIds: number[]): Promise<ChildRow[]> {
 async function readTexts(ids: number[]): Promise<Map<number, string>> {
   if (ids.length === 0) return new Map();
 
-  const result = await client.runAndReadAll(`
+  const result = await connection.runAndReadAll(`
     SELECT id, text
     FROM read_parquet('${dataGlob}')
     WHERE id IN (${ids.join(", ")})

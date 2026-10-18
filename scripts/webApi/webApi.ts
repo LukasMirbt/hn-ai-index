@@ -5,6 +5,15 @@ import * as ItemParser from "./parsers/itemParser.ts";
 import { type ItemData } from "./parsers/itemParser.ts";
 import { client } from "../webClient/client.ts";
 
+export async function fetchFrontPageHtml(
+  date: Temporal.PlainDate,
+): Promise<string> {
+  const day = DateModel.toYYYYMMDD(date);
+  const response = await client.get(`front?day=${day}`);
+  const html = await response.text();
+  return html;
+}
+
 export async function fetchFrontPage(
   date: Temporal.PlainDate,
 ): Promise<FrontPageData> {

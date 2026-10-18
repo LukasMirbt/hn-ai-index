@@ -1,3 +1,3 @@
-import { saveSlopForYear } from "./feature/calculateSlop.ts";
+import { saveFrontPagesForYear } from "./feature/crawlFrontPage/crawlFrontPage.ts";
 
-await saveSlopForYear(2025);
+await saveFrontPagesForYear(2026);
