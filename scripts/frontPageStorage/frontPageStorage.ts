@@ -1,42 +1,27 @@
 import * as client from "../fileStorageClient/fileStorageClient.ts";
 import { z } from "zod";
-import type { FrontPageData } from "./models/frontPageData.ts";
 import { type Storage, storageSchema } from "./models/storage.ts";
-import * as cache from "./frontPageStorageCache.ts";
-import { path } from "./models/path.ts";
+import * as PathModel from "./models/path.ts";
 
-export * from "./models/frontPageData.ts";
-
-export function read(date: Temporal.PlainDate): FrontPageData | null {
-  const existing = cache.get();
-  const dateString = date.toString();
-
-  const isCached = dateString in existing;
-  if (!isCached) return null;
-
-  const data = existing[dateString];
-  return data;
+export function checkIfExists(date: Temporal.PlainDate): boolean {
+  const path = PathModel.from(date, { error: false });
+  const exists = client.checkIfExists(path);
+  return exists;
 }
 
 export function save({
   date,
-  page,
+  html,
+  error,
 }: {
   date: Temporal.PlainDate;
-  page: FrontPageData;
+  html: string;
+  error: boolean;
 }): void {
-  const existing = cache.get();
-  const dateString = date.toString();
+  const path = PathModel.from(date, { error });
 
-  const merged = {
-    ...existing,
-    [dateString]: page,
-  };
-
-  client.writeJson({
+  client.write({
     path,
-    data: merged,
+    data: html,
   });
-
-  cache.put(merged);
 }

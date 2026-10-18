@@ -1,18 +1,18 @@
 import * as fs from "node:fs";
+import { dirname } from "node:path";
 
-export function readJson(path: string): Record<string, unknown> {
-  const data = fs.readFileSync(path, "utf8");
-  const json = JSON.parse(data) as Record<string, unknown>;
-  return json;
+export function checkIfExists(path: string): boolean {
+  const exists = fs.existsSync(path);
+  return exists;
 }
 
-export function writeJson({
-  path,
-  data,
-}: {
-  path: string;
-  data: Record<string, unknown>;
-}): void {
-  const json = JSON.stringify(data);
-  fs.writeFileSync(path, json);
+export function read(path: string): string {
+  const data = fs.readFileSync(path, "utf8");
+  return data;
+}
+
+export function write({ path, data }: { path: string; data: string }): void {
+  const directory = dirname(path);
+  fs.mkdirSync(directory, { recursive: true });
+  fs.writeFileSync(path, data);
 }

@@ -12,26 +12,24 @@ export * as CommentListModel from "./models/commentList.ts";
 import * as ItemModel from "./models/item.ts";
 import { type Item } from "./models/item.ts";
 import * as frontPageStorage from "../frontPageStorage/frontPageStorage.ts";
+import * as frontPageParser from "../webApi/parsers/frontPageParser.ts";
 
 export function checkIsFrontPageCached(date: Temporal.PlainDate): boolean {
-  const cached = frontPageStorage.read(date);
-  return !!cached;
+  const isCached = frontPageStorage.checkIfExists(date);
+  return isCached;
 }
 
-export async function fetchFrontPage(
-  date: Temporal.PlainDate,
-): Promise<FrontPage> {
-  const data = await webApi.fetchFrontPage(date);
-  const page = FrontPageModel.fromApi(data);
+export async function saveFrontPage(date: Temporal.PlainDate): Promise<void> {
+  const html = await webApi.fetchFrontPageHtml(date);
 
-  const storageData = FrontPageModel.toStorage(page);
+  const data = frontPageParser.parse(html);
+  const error = data.items.length !== 30;
 
-  frontPageStorage.save({
-    date,
-    page: storageData,
-  });
+  if (error) {
+    console.log(date, "error");
+  }
 
-  return page;
+  frontPageStorage.save({ date, html, error });
 }
 
 export async function fetchItem(id: number): Promise<Item> {

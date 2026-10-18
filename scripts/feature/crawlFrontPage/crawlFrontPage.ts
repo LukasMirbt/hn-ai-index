@@ -2,7 +2,7 @@ import * as repository from "../../domain/hnRepository.ts";
 import { setTimeout } from "node:timers/promises";
 
 export async function saveFrontPagesForYear(year: number): Promise<void> {
-  const startDate = new Temporal.PlainDate(year, 8, 1);
+  const startDate = new Temporal.PlainDate(year, 9, 1);
 
   for (
     let date = startDate;
@@ -37,8 +37,10 @@ async function saveFrontPagesForMonth({
       continue;
     }
 
-    const page = await repository.fetchFrontPage(date);
-    console.log(date.toString(), page);
+    await repository.saveFrontPage(date);
+
+    console.log(date.toString(), "saved");
+
     await setTimeout(1000);
   }
 }
