@@ -1,3 +1,3 @@
 import { saveFrontPagesForYear } from "./feature/crawlFrontPage/crawlFrontPage.ts";
 
-await saveFrontPagesForYear(2026);
+await saveFrontPagesForYear(2025);
