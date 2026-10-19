@@ -39,7 +39,11 @@ async function saveFrontPagesForMonth({
 
     await repository.saveFrontPage(date);
 
-    console.log(date.toString(), "saved");
+    console.log(
+      date.toString(),
+      "saved",
+      Temporal.Now.plainTimeISO().toString({ smallestUnit: "second" }),
+    );
 
     await setTimeout(30000);
   }
