@@ -1,6 +1,4 @@
 import * as client from "../fileStorageClient/fileStorageClient.ts";
-import { z } from "zod";
-import { type Storage, storageSchema } from "./models/storage.ts";
 import * as PathModel from "./models/path.ts";
 
 export function checkIfExists(date: Temporal.PlainDate): boolean {
@@ -24,4 +22,10 @@ export function save({
     path,
     data: html,
   });
+}
+
+export function read(date: Temporal.PlainDate): string {
+  const path = PathModel.from(date, { error: false });
+  const data = client.read(path);
+  return data;
 }

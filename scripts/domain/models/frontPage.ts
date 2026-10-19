@@ -6,7 +6,7 @@ export type FrontPage = {
   items: FrontPageItem[];
 };
 
-export function fromApi(data: parser.FrontPageData): FrontPage {
+export function from(data: parser.FrontPageData): FrontPage {
   const items = data.items.map(FrontPageItemModel.from);
   return { items };
 }

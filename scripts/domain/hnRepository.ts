@@ -2,7 +2,6 @@ import * as webApi from "../webApi/webApi.ts";
 import * as localDb from "../localDb/localDb.ts";
 import { type FrontPage } from "./models/frontPage.ts";
 import * as FrontPageModel from "./models/frontPage.ts";
-import * as fileStorageClient from "../fileStorageClient/fileStorageClient.ts";
 
 export { type Comment } from "./models/comment.ts";
 export * as CommentModel from "./models/comment.ts";
@@ -32,14 +31,23 @@ export async function saveFrontPage(date: Temporal.PlainDate): Promise<void> {
   frontPageStorage.save({ date, html, error });
 }
 
+export async function readFrontPage(
+  date: Temporal.PlainDate,
+): Promise<FrontPage> {
+  const html = frontPageStorage.read(date);
+  const data = frontPageParser.parse(html);
+  const page = FrontPageModel.from(data);
+  return page;
+}
+
 export async function fetchItem(id: number): Promise<Item> {
   const data = await webApi.fetchItem(id);
   const item = ItemModel.from(data);
   return item;
 }
 
-export async function fetchItems(ids: number[]): Promise<Item[]> {
-  const rows = await Promise.all(ids.map((id) => localDb.readStory2(id)));
+export async function readItems(ids: number[]): Promise<Item[]> {
+  const rows = await Promise.all(ids.map((id) => localDb.readStory(id)));
   const items = rows.map(ItemModel.fromRow);
   return items;
 }
