@@ -5,31 +5,26 @@ export * from "./models/commentRowSchema.ts";
 export * from "./models/storyRowSchema.ts";
 
 export async function readStory(id: number): Promise<StoryRow> {
+  /* WITH RECURSIVE 
+  SELECT id, deleted, dead, kids
+  FROM read_parquet('${dataGlob}')
+  WHERE id = 20003863; */
+
   const reader = await connection.runAndReadAll(`
-    WITH RECURSIVE tree(id) AS (
-      SELECT ${id}::BIGINT
-      UNION
-      SELECT item.id
-      FROM read_parquet('${dataGlob}') item
-      JOIN tree ON item.parent = tree.id
-    ),
-    latest AS (
-      SELECT id, text, deleted, dead
-      FROM read_parquet('${dataGlob}')
-      WHERE id IN (SELECT id FROM tree) AND id <> ${id}
-      QUALIFY row_number() OVER (PARTITION BY id ORDER BY update_time DESC) = 1
+    WITH RECURSIVE t(n) AS (
+      VALUES (1)
+        UNION
+      SELECT n+1 FROM t WHERE n < 100
     )
-    SELECT id, coalesce(text, '') AS text
-    FROM latest
-    WHERE NOT coalesce(deleted::BOOLEAN, false)
-      AND NOT coalesce(dead::BOOLEAN, false)
-    ORDER BY id
+    SELECT sum(n) FROM t;
   `);
 
-  const rows = reader.getRowObjectsJS() as { id: bigint; text: string }[];
+  return reader.getRowObjectsJS();
+
+  /*   const rows = reader.getRowObjectsJS() as { id: bigint; text: string }[];
 
   return storyRowSchema.parse({
     id,
     comments: rows.map((row) => ({ id: Number(row.id), htmlText: row.text })),
-  });
+  }); */
 }

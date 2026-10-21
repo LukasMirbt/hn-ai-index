@@ -31,13 +31,11 @@ export async function saveFrontPage(date: Temporal.PlainDate): Promise<void> {
   frontPageStorage.save({ date, html, error });
 }
 
-export async function readFrontPage(
-  date: Temporal.PlainDate,
-): Promise<FrontPage> {
+export async function saveSlop(date: Temporal.PlainDate): Promise<FrontPage> {
   const html = frontPageStorage.read(date);
   const data = frontPageParser.parse(html);
   const page = FrontPageModel.from(data);
-  return page;
+  slopStorage.save(slop);
 }
 
 export async function fetchItem(id: number): Promise<Item> {
