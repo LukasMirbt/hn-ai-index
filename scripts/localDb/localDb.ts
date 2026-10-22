@@ -11,15 +11,25 @@ export async function readStory(id: number): Promise<StoryRow> {
   WHERE id = 20003863; */
 
   const reader = await connection.runAndReadAll(`
-    WITH RECURSIVE t(n) AS (
-      VALUES (1)
+    WITH RECURSIVE story AS (
+      SELECT id, kids, dead, deleted
+      FROM read_parquet('${dataGlob}')
+      WHERE id = ${id}
         UNION
-      SELECT n+1 FROM t WHERE n < 100
+      SELECT id, kids, dead, deleted
+      FROM read_parquet('${dataGlob}')
+      WHERE id IN (
+        SELECT unnest(kids) FROM story
+      )
     )
-    SELECT sum(n) FROM t;
+    SELECT id 
+    FROM story
+    WHERE dead = 0
+    AND deleted = 0
+    AND id != ${id};
   `);
 
-  return reader.getRowObjectsJS();
+  return reader.getRowObjectsJS().map((item) => item.id);
 
   /*   const rows = reader.getRowObjectsJS() as { id: bigint; text: string }[];
 
